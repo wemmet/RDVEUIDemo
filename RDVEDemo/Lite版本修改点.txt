@@ -1,0 +1,3 @@
+一、资源：
+1､testFile中除“huiyi.mp3”以外都删除
+2､RDVEUISDK.bundle中的“MVEffect”文件夹、“SubtitleAnimations.zip”、“TextAnimate.zip”、“27_b.mp4”都删除
