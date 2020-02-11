@@ -1,0 +1,330 @@
+//
+//  RDVEUISDK-PrefixHeader.pch
+//  RDVEUISDK
+//
+//  Created by wuxiaoxia on 2017/7/14.
+//  Copyright © 2017年 北京锐动天地信息技术有限公司. All rights reserved.
+//
+
+#ifndef RDVEUISDK_PrefixHeader_pch
+#define RDVEUISDK_PrefixHeader_pch
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+// --------------------------------------------------------------------
+
+#ifdef __OBJC__
+
+
+
+#define TICK   NSDate *startTime = [NSDate date]
+#define TOCK   NSLog(@"Time: %f", -[startTime timeIntervalSinceNow])
+
+#define NEED_DEBUG  //开启调试日志
+
+#ifdef NEED_DEBUG
+
+#define NSLog(...) NSLog(__VA_ARGS__)
+
+#else
+
+#define NSLog(...)
+
+#endif
+
+#import <UIKit/UIKit.h>
+
+typedef NS_ENUM(NSInteger, RDUISDKErrorCode) {
+    RDUISDKErrorCode_NillOutputPath     = 1000, //无视频输出地址
+    RDUISDKErrorCode_NillInput          = 1001, //无视频源
+    RDUISDKErrorCode_NillDraft          = 1002, //无草稿
+    RDUISDKErrorCode_DownloadSubtitle   = 1003, //下载字幕失败
+    RDUISDKErrorCode_SaveDraft          = 1004, //保存草稿失败
+    RDUISDKErrorCode_TrimVideo          = 1005, //截取视频失败
+    RDUISDKErrorCode_FilePath           = 1006, //文件路径错误
+    RDUISDKErrorCode_NotReachable       = 1007, //无可用的网络
+};
+
+typedef NS_ENUM(NSInteger, CaptionAnimateType) {
+    CaptionAnimateTypeNone          = 0,  //无
+    CaptionAnimateTypeLeft ,              //左推
+    CaptionAnimateTypeRight,              //右推
+    CaptionAnimateTypeUp,                 //上推
+    CaptionAnimateTypeDown,               //下推
+    CaptionAnimateTypeScaleInOut,         //缩放入出
+    CaptionAnimateTypeScrollInOut,        //滚动入出
+    CaptionAnimateTypeFadeInOut,          //淡入淡出
+};
+
+typedef NS_ENUM(NSInteger, RDAdvanceEditType){
+    RDAdvanceEditType_None          =  0,   //无
+    RDAdvanceEditType_MV            =  1,   //MV
+    RDAdvanceEditType_Music         =  2,   //配乐
+    RDAdvanceEditType_Dubbing       =  3,   //配音
+    RDAdvanceEditType_Subtitle      =  4,   //字幕
+    RDAdvanceEditType_Filter        =  5,   //滤镜
+    RDAdvanceEditType_Sticker       =  6,   //贴纸
+    RDAdvanceEditType_Effect        =  7,   //特效
+    RDAdvanceEditType_SoundEffect   =  8,   //变声
+    RDAdvanceEditType_Dewatermark   =  9,   //去水印
+    RDAdvanceEditType_Proportion    =  10,  //比例
+    RDAdvanceEditType_PicZoom       =  11,  //图片动画
+    RDAdvanceEditType_BG            =  12,  //背景
+    RDAdvanceEditType_Sort          =  13,  //排序
+    RDAdvanceEditType_Collage       =  14,  //画中画
+    RDAdvanceEditType_Doodle        =  15,  //涂鸦
+    RDAdvanceEditType_Cover         =  16,  //封面
+    RDAdvanceEditType_Sound         =  17,  //音效
+    RDAdvanceEditType_Multi_track   =  18,  //多段配乐
+    RDAdvanceEditType_Volume        =  19,  //音量
+    RDAdvanceEditType_FragmentEdit  =  20,  //片段编辑
+    RDAdvanceEditType_SoundSettings =  21,  //声音
+    RDAdvanceEditType_Setting       =  22,  //设置
+    RDAdvanceEditType_Watermark     =  23,  //加水印
+    RDAdvanceEditType_Mosaic        =  24,  //马赛克
+};
+
+/*
+ *定制功能
+ */
+typedef NS_ENUM(NSInteger, RDcustomizationFunctionType){
+    kRDSORT             =0, //排序
+    kRDTRIM             =1, //截取
+    kRDSPLIT            =2, //分割
+    kRDEDIT             =3, //编辑
+    kRDCHANGESPEED      =4, //变速
+    kRDCOPY             =5, //复制
+    kRDTEXTTITLE        =6, //文字板
+    kRDREVERSEVIDEO     =7, //倒序
+    kRDCHANGEDURATION   =8,  //调整图片显示时长
+    kRDSINGLEFILTER     =10, //滤镜
+    KRDADJUST           =11, //调色
+    KRDEFFECTS          =12, //特效
+    KTRANSITION         =13, //转场
+    KROTATE             =14, //旋转
+    KFLIPUPANDDOWN      =15, //上下镜像
+    KMIRROR             =16, //左右镜像
+    KVOLUME             =17, //音量
+    KREPLACE            =18, //替换
+    KTRANSPARENCY       =19, //透明度
+    KRDANIMATION        =20, //动画
+    KBEAUTY             =21, //美颜
+};
+
+/*
+ *画中画编辑功能
+ */
+typedef NS_ENUM(NSInteger, RDPIPFunctionType){
+    kPIP_SINGLEFILTER  =0, //滤镜
+    kPIP_ADJUST        =1, //调色
+    kPIP_MIXEDMODE     =2, //混合模式
+    kPIP_CUTOUT        =3, //抠图
+    kPIP_VOLUME        =4, //音量
+    kPIP_BEAUTY        =5, //美颜
+    kPIP_TRANSPARENCY  = 6, //透明度
+    kPIP_ROTATE        = 7, //旋转
+    kPIP_MIRROR        = 8, //左右镜像
+    kPIP_FLIPUPANDDOWN = 9, //上下镜像
+    KPIP_REPLACE       = 10,//替换
+    KPIP_TRIM          = 11,//截取
+    KPIP_CHANGESPEED   = 12,//变速
+    KPIP_DELETE        = 13,//删除
+    KPIP_EDIT          = 14,//裁剪
+};
+
+//去水印类型
+typedef NS_ENUM(NSInteger, RDDewatermarkType){
+    RDDewatermarkType_Blur          = 1,    //高斯模糊
+    RDDewatermarkType_Mosaic        = 2,    //马赛克
+    RDDewatermarkType_Dewatermark   = 3,    //去水印
+};
+
+typedef NS_ENUM(NSInteger, RDSubtitleContentType) {
+    RDSubtitleContentType_text = 0,
+    RDSubtitleContentType_stroke,
+    RDSubtitleContentType_shadow,
+    RDSubtitleContentType_bg,
+    RDSubtitleContentType_alpha,
+};
+
+#import "RDNavigationViewController.h"
+#import "RD_RDReachabilityLexiu.h"
+#import "RD_JSONModel.h"
+#import "RD_JSONValueTransformer + Common.h"
+#import "RDFile.h"
+#import "RDHelpClass.h"
+#import "UIImage+Tint.h"
+#import "RDGenSpecialEffect.h"
+#import "RDZSlider.h"
+
+#endif
+// ----------------------------------------------------------------------
+
+//视频导出帧率
+#define kEXPORTFPS 24
+//视频导出分辨率
+#define kVIDEOHEIGHT ([RDHelpClass isLowDevice] ? 480 : 720)
+#define kVIDEOWIDTH ([RDHelpClass isLowDevice] ? 852 : 1280)
+#define kSQUAREVIDEOWIDTH 720
+//设备屏幕宽高
+#define kWIDTH [UIScreen mainScreen].bounds.size.width
+#define kHEIGHT [UIScreen mainScreen].bounds.size.height
+#define kNavigationBarHeight (iPhone_X ? 88 : 44)
+#define kToolbarHeight (iPhone_X ? 78 : 44)
+#define kPlayerViewHeight (kHEIGHT - (iPhone_X ? 44 + 34 : 0) - ( 0.523 * kWIDTH ))
+//#define kPlayerViewHeight (LASTIPHONE_5 ?(iPhone_X?(kWIDTH*4/3.0+40):kWIDTH*4/3.0): kWIDTH)
+#define kPlayerViewOriginX (iPhone_X ? 44 : 0)
+
+#define kBundName @"RDVEUISDK"
+#define kRECORDAAC //直接录制AAC，如果录制MP3则注释掉这一行
+#define TIMESCALE 600
+#define KPICDURATION 3  //图片显示时长
+
+#define DEGREES_TO_RADIANS(d) (d * M_PI / 180)
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define Main_Color UIColorFromRGB(0xffd500)
+//#define Main_Color [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults]objectForKey:@"kRDMainColor"]]
+/**
+ UIImage *image = [RDHelpClass getBundleImage:@"拍摄_美颜选中"];
+ image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+ beautifyButton.imageView.tintColor = [UIColor blueColor];
+ */
+#define NV_Color 0x27262c
+#define SCREEN_BACKGROUND_COLOR [UIColor blackColor]//UIColorFromRGB(0x33333b)//0f0f0f
+#define TOOLBAR_COLOR UIColorFromRGB(0x101010)
+#define CUSTOM_GRAYCOLOR UIColorFromRGB(0xb2b2b2)
+#define TEXT_COLOR UIColorFromRGB(0xb3b3b3)
+#define BOTTOM_COLOR [UIColor blackColor]//UIColorFromRGB(0x33333b)
+
+#define iPhone4s ([[UIScreen mainScreen] bounds].size.height == 480 || [[UIScreen mainScreen] bounds].size.width == 480)
+#define LASTIPHONE_5 [UIScreen mainScreen].bounds.size.height > 480
+#define LastIphone5 [UIScreen mainScreen].bounds.size.width > 320
+//#define iPhone_X (([[UIScreen mainScreen] bounds].size.height == 812.0 && [[UIScreen mainScreen] bounds].size.width == 375.0) || ([[UIScreen mainScreen] bounds].size.height == 375.0 && [[UIScreen mainScreen] bounds].size.width == 812.0))
+#define iPhone_X (  (([[UIScreen mainScreen] bounds].size.height == 812.0 && [[UIScreen mainScreen] bounds].size.width == 375.0) || ([[UIScreen mainScreen] bounds].size.height == 375.0 && [[UIScreen mainScreen] bounds].size.width == 812.0))   ||   (([[UIScreen mainScreen] bounds].size.height == 896.0 && [[UIScreen mainScreen] bounds].size.width == 414.0) || ([[UIScreen mainScreen] bounds].size.height == 414.0 && [[UIScreen mainScreen] bounds].size.width == 896.0))  )
+
+#define WeakSelf(obj) __weak typeof(obj) weakSelf = obj;
+#define StrongSelf(obj) __strong typeof(obj) strongSelf = weakSelf;
+
+#define isEnglish [[[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"][0] hasPrefix:@"en"] || [[[NSUserDefaults standardUserDefaults] objectForKey:kRDLanguage] isEqualToString:@"en"]
+#define RDBundlePath [[NSBundle mainBundle] pathForResource:kBundName ofType:@"bundle"]
+#define RDResourceBundle [NSBundle bundleWithPath:RDBundlePath]
+//#define RDLocalizedString(key,des) NSLocalizedStringFromTableInBundle(key, @"RDVEUISDK_Localizable", RDResourceBundle, nil)
+#define RDLocalizedString(key,des) [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"RDVEUISDK.bundle/%@", isEnglish ? @"en" : @"zh-Hans"] ofType:@"lproj"]] localizedStringForKey:(key) value:des table:@"RDVEUISDK_Localizable"]
+#define kRDLanguage @"RDLanguage"
+
+#define kE2ETransPath [RDBundlePath stringByAppendingString:@"/zhuanchang/e2eTranFood"]
+
+#define FaceUURL  @"http://dianbook.17rd.com/api/shortvideo/getfaceprop2"
+#define MVResourceURL @"http://dianbook.17rd.com/api/shortvideo/getmvprop3"
+#define MusicResourceURL  @"http://dianbook.17rd.com/api/shortvideo/getbgmusic"
+#define CloudMusicResourceURL @"http://dianbook.17rd.com/api/shortvideo/getcloudmusic"
+
+//#define SoundMusicTypeResourceURL @"http://d.56show.com/filemanage2/public/filemanage/file/typeData"
+#define SoundMusicResourceURL @"http://d.56show.com/filemanage2/public/filemanage/file/cloudMusicData"
+
+#define getEffectTypeUrl @"http://kx.56show.com/kuaixiu/openapi/video/getcaption3"
+#define getCaptionTypeNoIdUrl @"http://kx.56show.com/kuaixiu/openapi/video/getzimu4"
+#define getFontTypeUrl @"http://kx.56show.com/kuaixiu/openapi/video/getfont3"
+
+#define kRDDirectory [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+#define kRDCachesDirectory [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+
+#define kMusicFolder_old [NSTemporaryDirectory() stringByAppendingString:@"music/"]
+#define kMusicIconPath_old [NSTemporaryDirectory() stringByAppendingString:@"music/musicIcon/"]
+#define kMusicPath_old [NSTemporaryDirectory() stringByAppendingString:@"music/musics/"]
+
+#define kThemeMVPath_old [NSTemporaryDirectory() stringByAppendingString:@"MV/"]
+#define kThemeMVIconPath_old [NSTemporaryDirectory() stringByAppendingString:@"MV/MVIcon/"]
+#define kThemeMVEffectPath_old [NSTemporaryDirectory() stringByAppendingString:@"MV/MVEffects/"]
+
+
+#define kMusicFolder [kRDDirectory stringByAppendingPathComponent:@"music"]
+#define kMusicIconPath [kMusicFolder stringByAppendingPathComponent:@"musicIcon"]
+#define kMusicPath [kMusicFolder stringByAppendingPathComponent:@"musics"]
+
+#define kThemeMVPath [kRDDirectory stringByAppendingPathComponent:@"MV"]
+#define kThemeMVIconPath [kThemeMVPath stringByAppendingPathComponent:@"MVIcon"]
+#define kThemeMVEffectPath [kThemeMVPath stringByAppendingPathComponent:@"MVEffects"]
+
+#define kMVAnimateFolder [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/MVAnimate/"]
+#define kMVAnimatePlistPath [kMVAnimateFolder stringByAppendingPathComponent:@"animationlist_videoae.plist"]
+#define kTextAnimateFolder [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/TextAnimate/"]
+#define kTempTextAnimateFolder [NSTemporaryDirectory() stringByAppendingPathComponent:@"TextAnimate/"]
+
+#define kSpecialEffectFolder [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/SpecialEffect"]
+#define kNewSpecialEffectPlistPath [kSpecialEffectFolder stringByAppendingPathComponent:@"SpecialEffectList_New.plist"]
+
+#define kTransitionFolder [kRDCachesDirectory stringByAppendingPathComponent:@"transitionFiles"]
+#define kTransitionPlistPath [kTransitionFolder stringByAppendingPathComponent:@"TransitionList.plist"]
+
+#define kLocalTransitionFolder [RDBundlePath stringByAppendingPathComponent:@"transitions"]
+#define kLocalTransitionPlist [kLocalTransitionFolder stringByAppendingPathComponent:@"Transition.plist"]
+#define kDefaultTransitionTypeName @"基础"
+
+#define kWatermarkFolder [NSTemporaryDirectory() stringByAppendingString:@"watermark/"]
+
+#define kCoverFolder [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/cover"]
+
+#define kDoodleFolder [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/doodle"]
+#define kTextboardFolder [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/textboard"]
+#define kCurrentFrameTextureFolder  [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/currentFrameTexture"]
+
+#define kAEJsonMVEffectPath [NSTemporaryDirectory() stringByAppendingString:@"AEJsonAnimation/"]
+#define kAEJsonSubtitsPath [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/SubtitleAnimations/Effects"]
+
+#define kRDDraftDirectory [kRDDirectory stringByAppendingPathComponent:@"RDDraft"]
+#define kRDDraftListPath [kRDDraftDirectory stringByAppendingPathComponent:@"rdDraft.plist"]
+
+#define kRDStoryRecordDirectory [kRDDirectory stringByAppendingPathComponent:@"RDStoryRecord"]
+
+#define kSubtitleEffectFolder [kRDCachesDirectory stringByAppendingPathComponent:@"SubtitleEffect"]
+#define kSubtitleFolder [kSubtitleEffectFolder stringByAppendingPathComponent:@"Subtitle"]
+#define kSubtitleIconPath [kSubtitleFolder stringByAppendingPathComponent:@"icon"]
+#define kSubtitlePlistPath [kSubtitleFolder stringByAppendingPathComponent:@"SubtitleListType.plist"]
+#define kSubtitleIconPlistPath [kSubtitleFolder stringByAppendingPathComponent:@"SubtitleIconList.plist"]
+#define kSubtitleCheckPlistPath [kSubtitleFolder stringByAppendingPathComponent:@"SubtitleCheckList.plist"]
+
+#define kFontFolder [kSubtitleEffectFolder stringByAppendingPathComponent:@"Font"]
+#define kFontIconPath [kFontFolder stringByAppendingPathComponent:@"icon"]
+#define kFontPlistPath [kFontFolder stringByAppendingPathComponent:@"fontList2020.plist"]
+#define kFontIconPlistPath [kFontFolder stringByAppendingPathComponent:@"fontIconList2020.plist"]
+#define kFontCheckPlistPath [kFontFolder stringByAppendingPathComponent:@"fontCheckList2020.plist"]
+#define kFontType @"font_family_2"
+
+#define kStickerFolder [kSubtitleEffectFolder stringByAppendingPathComponent:@"Effect"]
+#define kStickerIconPath [kStickerFolder stringByAppendingPathComponent:@"icon"]
+#define kStickerPlistPath [kStickerFolder stringByAppendingPathComponent:@"EffectList.plist"]
+
+#define kStickerIconPlistPath [kStickerFolder stringByAppendingPathComponent:@"EffectIconList.plist"]
+#define kStickerCheckPlistPath [kStickerFolder stringByAppendingPathComponent:@"EffectCheckList.plist"]
+
+
+#define kStickerTypesPath [kStickerFolder stringByAppendingPathComponent:@"EffectTypesList.plist"]
+#define kNewStickerPlistPath [kStickerFolder stringByAppendingPathComponent:@"EffectPlistList.plist"]
+
+#define kStickerMinScale   0.1
+#define kStickerMaxScale   4.0
+#define kTransitionMinValue   0.1
+
+#define kRDRecordSet @"RDRecordSet"
+#define kRDProportionIndex  @"RDProportionIndex"    //视频比例
+#define kRDDisablePicAnimation  @"RDDisablePicAnimation"    //禁用图片动画
+#define kRDEnableBg  @"RDEnableBg"    //启用背景
+#define kRDBgColorIndex  @"RDBgColorIndex"  //背景颜色
+#define kRDVideoBgColorIndex  @"RDVideoBgColorIndex"  //背景颜色
+#define kRDEnableVague  @"RDEnableVague"    //模糊背景
+
+//#define USEDYNAMICCOVER
+
+#define kLRFlipTransform CGAffineTransformMakeScale(-1.0, 1.0)  //左右
+#define kUDFlipTransform CGAffineTransformMakeScale(1.0,-1.0)   //上下
+#define kLRUPFlipTransform CGAffineTransformScale(CGAffineTransformMakeScale(1.0,-1.0), -1.0, 1.0)  //上下左右
+
+#define RDUISDKCustomErrorDomain @"com.17rd.RDVEUISDK_ErrorDomain"
+
+#define isUseCustomLayer 1
+
+#define  KScrollHeight   60
+
+#endif /* RDVEUISDK_PrefixHeader_pch */

@@ -1,0 +1,6 @@
+framework module RD_JSONModel {
+	umbrella header "RD_JSONModelLib.h"
+
+	export *
+	module * { export * }
+}

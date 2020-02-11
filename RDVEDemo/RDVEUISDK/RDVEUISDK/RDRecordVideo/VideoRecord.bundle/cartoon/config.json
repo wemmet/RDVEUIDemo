@@ -1,0 +1,64 @@
+{
+	"ver" : 2,
+	"minCoreVer":120,
+	"color" : [23, 238, 139, 0.6],
+	"name" : "cartoon",
+	"fragShader" : "frag.txt",
+	"vertShader" : "vert.txt",
+	"uniformParams" : [{
+			"paramName" : "size",
+			"type" : "floatArray",
+			"frameArray" : [{
+					"time" : 0.000,
+					"value" : [6.0, 4.0]
+				}
+			]
+		}, {
+			"paramName" : "showLine",
+			"type" : "int",
+			"frameArray" : [{
+					"time" : 0.000,
+					"value" : [1]
+				}
+			]
+		}, {
+			"paramName" : "type",
+			"type" : "int",
+			"frameArray" : [{
+					"time" : 0.000,
+					"value" : [0]
+				}
+			]
+		}, {
+			"paramName" : "layel",
+			"type" : "int",
+			"frameArray" : [{
+					"time" : 0.000,
+					"value" : [20]
+				}
+			]
+		}, {
+			"paramName" : "sharp",
+			"type" : "float",
+			"frameArray" : [{
+					"time" : 0.000,
+					"value" : [0.8]
+				}
+			]
+		}, {
+			"paramName" : "contrast",
+			"type" : "float",
+			"frameArray" : [{
+					"time" : 0.000,
+					"value" : [1.2]
+				}
+			]
+		}
+	],
+	"textureParams" : [{
+			"paramName" : "radiationTexture",
+			"warpMode" : "ClampToEdge",
+			"source" : "image1.jpg"
+		}
+	]
+}
