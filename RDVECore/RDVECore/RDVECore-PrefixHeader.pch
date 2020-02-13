@@ -1,0 +1,35 @@
+//
+//  RDVECore-PrefixHeader.pch
+//  RDVECore
+//
+//  Created by apple on 2017/6/15.
+//  Copyright © 2017年 Solaren. All rights reserved.
+//
+
+#ifndef RDVECore_PrefixHeader_pch
+#define RDVECore_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define TIMESCALE 600
+//#define ForcedSeek  //有的视频刚开始几帧读不出来，seek到CMTimeMake(3, originalFrameRate)才能播放,这种方法在ios13系统时，第一帧会是黑屏，因此改用获取视频实际时长的方法//20190924
+
+// --------------------------------------------------------------------
+#define RDVECore_NEED_DEBUG //开启调试日志
+
+#ifdef RDVECore_NEED_DEBUG
+
+#define NSLog(...) NSLog(__VA_ARGS__)
+
+#else
+
+#define NSLog(...)
+
+#endif
+
+//#define USE_MULTITEXTURE  //开启多纹理优化 seek到虚拟视频末尾可能绘制错误 初步猜测是上传纹理的错误 
+// ----------------------------------------------------------------------
+
+//#define USERENDERFILTER
+#endif /* RDVECore_PrefixHeader_pch */

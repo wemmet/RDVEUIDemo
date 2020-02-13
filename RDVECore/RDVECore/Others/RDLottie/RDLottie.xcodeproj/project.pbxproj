@@ -1,0 +1,1124 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		182E860A21C2334C0088C18B /* RDLOTCompositionContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E857B21C2334B0088C18B /* RDLOTCompositionContainer.h */; };
+		182E860B21C2334C0088C18B /* RDLOTCompositionContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E857C21C2334B0088C18B /* RDLOTCompositionContainer.m */; };
+		182E860C21C2334C0088C18B /* RDLOTLayerContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E857D21C2334C0088C18B /* RDLOTLayerContainer.h */; };
+		182E860D21C2334C0088C18B /* RDLOTLayerContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E857E21C2334C0088C18B /* RDLOTLayerContainer.m */; };
+		182E860E21C2334C0088C18B /* RDLOTMaskContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E857F21C2334C0088C18B /* RDLOTMaskContainer.h */; };
+		182E860F21C2334C0088C18B /* RDLOTMaskContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E858021C2334C0088C18B /* RDLOTMaskContainer.m */; };
+		182E861021C2334C0088C18B /* RDLOTBezierData.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E858221C2334C0088C18B /* RDLOTBezierData.h */; };
+		182E861121C2334C0088C18B /* RDLOTBezierData.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E858321C2334C0088C18B /* RDLOTBezierData.m */; };
+		182E861221C2334C0088C18B /* RDLOTKeyframe.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E858421C2334C0088C18B /* RDLOTKeyframe.h */; };
+		182E861321C2334C0088C18B /* RDLOTKeyframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E858521C2334C0088C18B /* RDLOTKeyframe.m */; };
+		182E861421C2334C0088C18B /* CGGeometry+RDLOTAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E858721C2334C0088C18B /* CGGeometry+RDLOTAdditions.h */; };
+		182E861521C2334C0088C18B /* CGGeometry+RDLOTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E858821C2334C0088C18B /* CGGeometry+RDLOTAdditions.m */; };
+		182E861621C2334C0088C18B /* RDLOTBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E858921C2334C0088C18B /* RDLOTBezierPath.h */; };
+		182E861721C2334C0088C18B /* RDLOTBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E858A21C2334C0088C18B /* RDLOTBezierPath.m */; };
+		182E861821C2334C0088C18B /* RDLOTHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E858B21C2334C0088C18B /* RDLOTHelpers.h */; };
+		182E861921C2334C0088C18B /* RDLOTRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E858C21C2334C0088C18B /* RDLOTRadialGradientLayer.h */; };
+		182E861A21C2334C0088C18B /* RDLOTRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E858D21C2334C0088C18B /* RDLOTRadialGradientLayer.m */; };
+		182E861B21C2334C0088C18B /* UIColor+RDExpanded.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E858E21C2334C0088C18B /* UIColor+RDExpanded.h */; };
+		182E861C21C2334C0088C18B /* UIColor+RDExpanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E858F21C2334C0088C18B /* UIColor+RDExpanded.m */; };
+		182E861D21C2334C0088C18B /* CALayer+RDCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E859121C2334C0088C18B /* CALayer+RDCompat.h */; };
+		182E861E21C2334C0088C18B /* CALayer+RDCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E859221C2334C0088C18B /* CALayer+RDCompat.m */; };
+		182E861F21C2334C0088C18B /* NSValue+RDCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E859321C2334C0088C18B /* NSValue+RDCompat.h */; };
+		182E862021C2334C0088C18B /* NSValue+RDCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E859421C2334C0088C18B /* NSValue+RDCompat.m */; };
+		182E862121C2334C0088C18B /* RDLOTPlatformCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E859521C2334C0088C18B /* RDLOTPlatformCompat.h */; };
+		182E862221C2334C0088C18B /* UIBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E859621C2334C0088C18B /* UIBezierPath.h */; };
+		182E862321C2334C0088C18B /* UIBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E859721C2334C0088C18B /* UIBezierPath.m */; };
+		182E862421C2334C0088C18B /* UIColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E859821C2334C0088C18B /* UIColor.h */; };
+		182E862521C2334C0088C18B /* UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E859921C2334C0088C18B /* UIColor.m */; };
+		182E862621C2334C0088C18B /* RDLOTAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E859B21C2334C0088C18B /* RDLOTAsset.h */; };
+		182E862721C2334C0088C18B /* RDLOTAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E859C21C2334C0088C18B /* RDLOTAsset.m */; };
+		182E862821C2334C0088C18B /* RDLOTAssetGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E859D21C2334C0088C18B /* RDLOTAssetGroup.h */; };
+		182E862921C2334C0088C18B /* RDLOTAssetGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E859E21C2334C0088C18B /* RDLOTAssetGroup.m */; };
+		182E862A21C2334C0088C18B /* RDLOTLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E859F21C2334C0088C18B /* RDLOTLayer.h */; };
+		182E862B21C2334C0088C18B /* RDLOTLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85A021C2334C0088C18B /* RDLOTLayer.m */; };
+		182E862C21C2334C0088C18B /* RDLOTLayerGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85A121C2334C0088C18B /* RDLOTLayerGroup.h */; };
+		182E862D21C2334C0088C18B /* RDLOTLayerGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85A221C2334C0088C18B /* RDLOTLayerGroup.m */; };
+		182E862E21C2334C0088C18B /* RDLOTMask.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85A321C2334C0088C18B /* RDLOTMask.h */; };
+		182E862F21C2334C0088C18B /* RDLOTMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85A421C2334C0088C18B /* RDLOTMask.m */; };
+		182E863021C2334C0088C18B /* RDLOTModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85A521C2334C0088C18B /* RDLOTModels.h */; };
+		182E863121C2334C0088C18B /* RDLOTShapeCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85A621C2334C0088C18B /* RDLOTShapeCircle.h */; };
+		182E863221C2334C0088C18B /* RDLOTShapeCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85A721C2334C0088C18B /* RDLOTShapeCircle.m */; };
+		182E863321C2334C0088C18B /* RDLOTShapeFill.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85A821C2334C0088C18B /* RDLOTShapeFill.h */; };
+		182E863421C2334C0088C18B /* RDLOTShapeFill.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85A921C2334C0088C18B /* RDLOTShapeFill.m */; };
+		182E863521C2334C0088C18B /* RDLOTShapeGradientFill.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85AA21C2334C0088C18B /* RDLOTShapeGradientFill.h */; };
+		182E863621C2334C0088C18B /* RDLOTShapeGradientFill.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85AB21C2334C0088C18B /* RDLOTShapeGradientFill.m */; };
+		182E863721C2334C0088C18B /* RDLOTShapeGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85AC21C2334C0088C18B /* RDLOTShapeGroup.h */; };
+		182E863821C2334C0088C18B /* RDLOTShapeGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85AD21C2334C0088C18B /* RDLOTShapeGroup.m */; };
+		182E863921C2334C0088C18B /* RDLOTShapePath.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85AE21C2334C0088C18B /* RDLOTShapePath.h */; };
+		182E863A21C2334C0088C18B /* RDLOTShapePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85AF21C2334C0088C18B /* RDLOTShapePath.m */; };
+		182E863B21C2334C0088C18B /* RDLOTShapeRectangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85B021C2334C0088C18B /* RDLOTShapeRectangle.h */; };
+		182E863C21C2334C0088C18B /* RDLOTShapeRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85B121C2334C0088C18B /* RDLOTShapeRectangle.m */; };
+		182E863D21C2334C0088C18B /* RDLOTShapeRepeater.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85B221C2334C0088C18B /* RDLOTShapeRepeater.h */; };
+		182E863E21C2334C0088C18B /* RDLOTShapeRepeater.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85B321C2334C0088C18B /* RDLOTShapeRepeater.m */; };
+		182E863F21C2334C0088C18B /* RDLOTShapeStar.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85B421C2334C0088C18B /* RDLOTShapeStar.h */; };
+		182E864021C2334C0088C18B /* RDLOTShapeStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85B521C2334C0088C18B /* RDLOTShapeStar.m */; };
+		182E864121C2334C0088C18B /* RDLOTShapeStroke.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85B621C2334C0088C18B /* RDLOTShapeStroke.h */; };
+		182E864221C2334C0088C18B /* RDLOTShapeStroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85B721C2334C0088C18B /* RDLOTShapeStroke.m */; };
+		182E864321C2334C0088C18B /* RDLOTShapeTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85B821C2334C0088C18B /* RDLOTShapeTransform.h */; };
+		182E864421C2334C0088C18B /* RDLOTShapeTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85B921C2334C0088C18B /* RDLOTShapeTransform.m */; };
+		182E864521C2334C0088C18B /* RDLOTShapeTrimPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85BA21C2334C0088C18B /* RDLOTShapeTrimPath.h */; };
+		182E864621C2334C0088C18B /* RDLOTShapeTrimPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85BB21C2334C0088C18B /* RDLOTShapeTrimPath.m */; };
+		182E864721C2334C0088C18B /* RDLOTAnimatedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85BD21C2334C0088C18B /* RDLOTAnimatedControl.m */; };
+		182E864821C2334C0088C18B /* RDLOTAnimatedSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85BE21C2334C0088C18B /* RDLOTAnimatedSwitch.m */; };
+		182E864921C2334C0088C18B /* RDLOTAnimationCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85BF21C2334C0088C18B /* RDLOTAnimationCache.m */; };
+		182E864A21C2334C0088C18B /* RDLOTAnimationTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85C021C2334C0088C18B /* RDLOTAnimationTransitionController.m */; };
+		182E864B21C2334C0088C18B /* RDLOTAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85C121C2334C0088C18B /* RDLOTAnimationView.m */; };
+		182E864C21C2334C0088C18B /* RDLOTAnimationView_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85C221C2334C0088C18B /* RDLOTAnimationView_Internal.h */; };
+		182E864D21C2334C0088C18B /* RDLOTBlockCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85C321C2334C0088C18B /* RDLOTBlockCallback.m */; };
+		182E864E21C2334C0088C18B /* RDLOTCacheProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85C421C2334C0088C18B /* RDLOTCacheProvider.m */; };
+		182E864F21C2334C0088C18B /* RDLOTComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85C521C2334C0088C18B /* RDLOTComposition.m */; };
+		182E865021C2334C0088C18B /* RDLOTInterpolatorCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85C621C2334C0088C18B /* RDLOTInterpolatorCallback.m */; };
+		182E865121C2334C0088C18B /* RDLOTKeypath.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85C721C2334C0088C18B /* RDLOTKeypath.m */; };
+		182E865221C2334C0088C18B /* RDLOTValueCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85C821C2334C0088C18B /* RDLOTValueCallback.m */; };
+		182E865321C2334C0088C18B /* RDLOTAnimatedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85CA21C2334C0088C18B /* RDLOTAnimatedControl.h */; };
+		182E865421C2334C0088C18B /* RDLOTAnimatedSourceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85CB21C2334C0088C18B /* RDLOTAnimatedSourceInfo.h */; };
+		182E865521C2334C0088C18B /* RDLOTAnimatedSourceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85CC21C2334C0088C18B /* RDLOTAnimatedSourceInfo.m */; };
+		182E865621C2334C0088C18B /* RDLOTAnimatedSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85CD21C2334C0088C18B /* RDLOTAnimatedSwitch.h */; };
+		182E865721C2334C0088C18B /* RDLOTAnimationCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85CE21C2334C0088C18B /* RDLOTAnimationCache.h */; };
+		182E865821C2334C0088C18B /* RDLOTAnimationTransitionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85CF21C2334C0088C18B /* RDLOTAnimationTransitionController.h */; };
+		182E865921C2334C0088C18B /* RDLOTAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85D021C2334C0088C18B /* RDLOTAnimationView.h */; };
+		182E865A21C2334C0088C18B /* RDLOTAnimationView_Compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85D121C2334C0088C18B /* RDLOTAnimationView_Compat.h */; };
+		182E865B21C2334C0088C18B /* RDLOTBlockCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85D221C2334C0088C18B /* RDLOTBlockCallback.h */; };
+		182E865C21C2334C0088C18B /* RDLOTCacheProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85D321C2334C0088C18B /* RDLOTCacheProvider.h */; };
+		182E865D21C2334C0088C18B /* RDLOTComposition.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85D421C2334C0088C18B /* RDLOTComposition.h */; };
+		182E865E21C2334C0088C18B /* RDLOTInterpolatorCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85D521C2334C0088C18B /* RDLOTInterpolatorCallback.h */; };
+		182E865F21C2334C0088C18B /* RDLOTKeypath.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85D621C2334C0088C18B /* RDLOTKeypath.h */; };
+		182E866021C2334C0088C18B /* RDLottie.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85D721C2334C0088C18B /* RDLottie.h */; };
+		182E866121C2334C0088C18B /* RDLOTValueCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85D821C2334C0088C18B /* RDLOTValueCallback.h */; };
+		182E866221C2334C0088C18B /* RDLOTValueDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85D921C2334C0088C18B /* RDLOTValueDelegate.h */; };
+		182E866321C2334C0088C18B /* RDLottie-PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 182E85DA21C2334C0088C18B /* RDLottie-PrefixHeader.pch */; };
+		182E866421C2334C0088C18B /* RDLOTCircleAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85DD21C2334C0088C18B /* RDLOTCircleAnimator.h */; };
+		182E866521C2334C0088C18B /* RDLOTCircleAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85DE21C2334C0088C18B /* RDLOTCircleAnimator.m */; };
+		182E866621C2334C0088C18B /* RDLOTPathAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85DF21C2334C0088C18B /* RDLOTPathAnimator.h */; };
+		182E866721C2334C0088C18B /* RDLOTPathAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85E021C2334C0088C18B /* RDLOTPathAnimator.m */; };
+		182E866821C2334C0088C18B /* RDLOTPolygonAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85E121C2334C0088C18B /* RDLOTPolygonAnimator.h */; };
+		182E866921C2334C0088C18B /* RDLOTPolygonAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85E221C2334C0088C18B /* RDLOTPolygonAnimator.m */; };
+		182E866A21C2334C0088C18B /* RDLOTPolystarAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85E321C2334C0088C18B /* RDLOTPolystarAnimator.h */; };
+		182E866B21C2334C0088C18B /* RDLOTPolystarAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85E421C2334C0088C18B /* RDLOTPolystarAnimator.m */; };
+		182E866C21C2334C0088C18B /* RDLOTRoundedRectAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85E521C2334C0088C18B /* RDLOTRoundedRectAnimator.h */; };
+		182E866D21C2334C0088C18B /* RDLOTRoundedRectAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85E621C2334C0088C18B /* RDLOTRoundedRectAnimator.m */; };
+		182E866E21C2334C0088C18B /* RDLOTArrayInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85E821C2334C0088C18B /* RDLOTArrayInterpolator.h */; };
+		182E866F21C2334C0088C18B /* RDLOTArrayInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85E921C2334C0088C18B /* RDLOTArrayInterpolator.m */; };
+		182E867021C2334C0088C18B /* RDLOTColorInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85EA21C2334C0088C18B /* RDLOTColorInterpolator.h */; };
+		182E867121C2334C0088C18B /* RDLOTColorInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85EB21C2334C0088C18B /* RDLOTColorInterpolator.m */; };
+		182E867221C2334C0088C18B /* RDLOTNumberInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85EC21C2334C0088C18B /* RDLOTNumberInterpolator.h */; };
+		182E867321C2334C0088C18B /* RDLOTNumberInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85ED21C2334C0088C18B /* RDLOTNumberInterpolator.m */; };
+		182E867421C2334C0088C18B /* RDLOTPathInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85EE21C2334C0088C18B /* RDLOTPathInterpolator.h */; };
+		182E867521C2334C0088C18B /* RDLOTPathInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85EF21C2334C0088C18B /* RDLOTPathInterpolator.m */; };
+		182E867621C2334C0088C18B /* RDLOTPointInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85F021C2334C0088C18B /* RDLOTPointInterpolator.h */; };
+		182E867721C2334C0088C18B /* RDLOTPointInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85F121C2334C0088C18B /* RDLOTPointInterpolator.m */; };
+		182E867821C2334C0088C18B /* RDLOTSizeInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85F221C2334C0088C18B /* RDLOTSizeInterpolator.h */; };
+		182E867921C2334C0088C18B /* RDLOTSizeInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85F321C2334C0088C18B /* RDLOTSizeInterpolator.m */; };
+		182E867A21C2334C0088C18B /* RDLOTTransformInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85F421C2334C0088C18B /* RDLOTTransformInterpolator.h */; };
+		182E867B21C2334C0088C18B /* RDLOTTransformInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85F521C2334C0088C18B /* RDLOTTransformInterpolator.m */; };
+		182E867C21C2334C0088C18B /* RDLOTValueInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85F621C2334C0088C18B /* RDLOTValueInterpolator.h */; };
+		182E867D21C2334C0088C18B /* RDLOTValueInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85F721C2334C0088C18B /* RDLOTValueInterpolator.m */; };
+		182E867E21C2334C0088C18B /* RDLOTTrimPathNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85F921C2334C0088C18B /* RDLOTTrimPathNode.h */; };
+		182E867F21C2334C0088C18B /* RDLOTTrimPathNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85FA21C2334C0088C18B /* RDLOTTrimPathNode.m */; };
+		182E868021C2334C0088C18B /* RDLOTAnimatorNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85FB21C2334C0088C18B /* RDLOTAnimatorNode.h */; };
+		182E868121C2334C0088C18B /* RDLOTAnimatorNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85FC21C2334C0088C18B /* RDLOTAnimatorNode.m */; };
+		182E868221C2334C0088C18B /* RDLOTRenderNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E85FD21C2334C0088C18B /* RDLOTRenderNode.h */; };
+		182E868321C2334C0088C18B /* RDLOTRenderNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E85FE21C2334C0088C18B /* RDLOTRenderNode.m */; };
+		182E868421C2334C0088C18B /* RDLOTFillRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E860021C2334C0088C18B /* RDLOTFillRenderer.h */; };
+		182E868521C2334C0088C18B /* RDLOTFillRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E860121C2334C0088C18B /* RDLOTFillRenderer.m */; };
+		182E868621C2334C0088C18B /* RDLOTGradientFillRender.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E860221C2334C0088C18B /* RDLOTGradientFillRender.h */; };
+		182E868721C2334C0088C18B /* RDLOTGradientFillRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E860321C2334C0088C18B /* RDLOTGradientFillRender.m */; };
+		182E868821C2334C0088C18B /* RDLOTRenderGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E860421C2334C0088C18B /* RDLOTRenderGroup.h */; };
+		182E868921C2334C0088C18B /* RDLOTRenderGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E860521C2334C0088C18B /* RDLOTRenderGroup.m */; };
+		182E868A21C2334C0088C18B /* RDLOTRepeaterRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E860621C2334C0088C18B /* RDLOTRepeaterRenderer.h */; };
+		182E868B21C2334C0088C18B /* RDLOTRepeaterRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E860721C2334C0088C18B /* RDLOTRepeaterRenderer.m */; };
+		182E868C21C2334C0088C18B /* RDLOTStrokeRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 182E860821C2334C0088C18B /* RDLOTStrokeRenderer.h */; };
+		182E868D21C2334C0088C18B /* RDLOTStrokeRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E860921C2334C0088C18B /* RDLOTStrokeRenderer.m */; };
+		1833B1602351A9E2003957C3 /* RDLOTEffectBlur.h in Headers */ = {isa = PBXBuildFile; fileRef = 1833B15C2351A9E2003957C3 /* RDLOTEffectBlur.h */; };
+		1833B1612351A9E2003957C3 /* RDLOTEffectTint.h in Headers */ = {isa = PBXBuildFile; fileRef = 1833B15D2351A9E2003957C3 /* RDLOTEffectTint.h */; };
+		1833B1622351A9E2003957C3 /* RDLOTEffectBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 1833B15E2351A9E2003957C3 /* RDLOTEffectBlur.m */; };
+		1833B1632351A9E2003957C3 /* RDLOTEffectTint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1833B15F2351A9E2003957C3 /* RDLOTEffectTint.m */; };
+		1833B1682351AAD7003957C3 /* RDLOTEffectTintRender.h in Headers */ = {isa = PBXBuildFile; fileRef = 1833B1642351AAD7003957C3 /* RDLOTEffectTintRender.h */; };
+		1833B1692351AAD7003957C3 /* RDLOTEffectBlurRender.h in Headers */ = {isa = PBXBuildFile; fileRef = 1833B1652351AAD7003957C3 /* RDLOTEffectBlurRender.h */; };
+		1833B16A2351AAD7003957C3 /* RDLOTEffectBlurRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 1833B1662351AAD7003957C3 /* RDLOTEffectBlurRender.m */; };
+		1833B16B2351AAD7003957C3 /* RDLOTEffectTintRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 1833B1672351AAD7003957C3 /* RDLOTEffectTintRender.m */; };
+		183B76E1232A1D1000BE3E62 /* RDLOTEffectGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 183B76DB232A1D0D00BE3E62 /* RDLOTEffectGroup.h */; };
+		183B76E3232A1D1000BE3E62 /* RDLOTEffectGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B76DD232A1D0F00BE3E62 /* RDLOTEffectGroup.m */; };
+		18446D7F235D51D100212984 /* BCMeshTransform+DemoTransforms.h in Headers */ = {isa = PBXBuildFile; fileRef = 18446D7D235D51D100212984 /* BCMeshTransform+DemoTransforms.h */; };
+		18446D80235D51D100212984 /* BCMeshTransform+DemoTransforms.m in Sources */ = {isa = PBXBuildFile; fileRef = 18446D7E235D51D100212984 /* BCMeshTransform+DemoTransforms.m */; };
+		1848CDB52359B97D0051F2E4 /* BCMeshTransform+Interpolation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1848CDA12359B97C0051F2E4 /* BCMeshTransform+Interpolation.h */; };
+		1848CDB62359B97D0051F2E4 /* BCMeshBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1848CDA22359B97C0051F2E4 /* BCMeshBuffer.m */; };
+		1848CDB72359B97D0051F2E4 /* BCMeshContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1848CDA32359B97C0051F2E4 /* BCMeshContentView.m */; };
+		1848CDB82359B97D0051F2E4 /* BCMeshTransform.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1848CDA42359B97C0051F2E4 /* BCMeshTransform.mm */; };
+		1848CDB92359B97D0051F2E4 /* BCMeshShader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1848CDA52359B97C0051F2E4 /* BCMeshShader.h */; };
+		1848CDBA2359B97D0051F2E4 /* BCMeshTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1848CDA62359B97C0051F2E4 /* BCMeshTexture.m */; };
+		1848CDBB2359B97D0051F2E4 /* BCMeshTransformView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1848CDA72359B97C0051F2E4 /* BCMeshTransformView.h */; };
+		1848CDBC2359B97D0051F2E4 /* BCMutableMeshTransform+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 1848CDA92359B97C0051F2E4 /* BCMutableMeshTransform+Convenience.m */; };
+		1848CDBD2359B97D0051F2E4 /* BCMeshTransformAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1848CDAA2359B97C0051F2E4 /* BCMeshTransformAnimation.m */; };
+		1848CDBE2359B97D0051F2E4 /* BCMeshContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1848CDAB2359B97C0051F2E4 /* BCMeshContentView.h */; };
+		1848CDBF2359B97D0051F2E4 /* BCMeshBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1848CDAC2359B97C0051F2E4 /* BCMeshBuffer.h */; };
+		1848CDC02359B97D0051F2E4 /* BCMeshTransform+Interpolation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1848CDAD2359B97C0051F2E4 /* BCMeshTransform+Interpolation.m */; };
+		1848CDC12359B97D0051F2E4 /* BCMeshTransformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1848CDAE2359B97C0051F2E4 /* BCMeshTransformView.m */; };
+		1848CDC22359B97D0051F2E4 /* BCMeshTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 1848CDAF2359B97C0051F2E4 /* BCMeshTexture.h */; };
+		1848CDC32359B97D0051F2E4 /* BCMeshShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1848CDB02359B97C0051F2E4 /* BCMeshShader.m */; };
+		1848CDC42359B97D0051F2E4 /* BCMeshTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 1848CDB12359B97C0051F2E4 /* BCMeshTransform.h */; };
+		1848CDC52359B97D0051F2E4 /* BCMeshTransformAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1848CDB22359B97C0051F2E4 /* BCMeshTransformAnimation.h */; };
+		1848CDC62359B97D0051F2E4 /* BCMutableMeshTransform+Convenience.h in Headers */ = {isa = PBXBuildFile; fileRef = 1848CDB32359B97C0051F2E4 /* BCMutableMeshTransform+Convenience.h */; };
+		1848CDC92359BD600051F2E4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1848CDC82359BD600051F2E4 /* OpenGLES.framework */; };
+		1848CDCB2359BD6C0051F2E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1848CDCA2359BD6B0051F2E4 /* CoreGraphics.framework */; };
+		1848CDCD2359BD790051F2E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1848CDCC2359BD790051F2E4 /* Foundation.framework */; };
+		1848CDCF2359BD820051F2E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1848CDCE2359BD820051F2E4 /* UIKit.framework */; };
+		1848CDD12359BE260051F2E4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1848CDD02359BE260051F2E4 /* QuartzCore.framework */; };
+		184DBE4A2341B95500C402E5 /* RDLOTRenderEffectNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 184DBE482341B95500C402E5 /* RDLOTRenderEffectNode.m */; };
+		184DBE4B2341B95500C402E5 /* RDLOTRenderEffectNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 184DBE492341B95500C402E5 /* RDLOTRenderEffectNode.h */; };
+		18657D8B2394F2E900A3D3EB /* RDLOTTintCIFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18657D892394F2E800A3D3EB /* RDLOTTintCIFilter.m */; };
+		18657D8C2394F2E900A3D3EB /* RDLOTTintCIFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 18657D8A2394F2E800A3D3EB /* RDLOTTintCIFilter.h */; };
+		18657D8F23951B1800A3D3EB /* RDLOTEffectDistortionRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 18657D8D23951B1400A3D3EB /* RDLOTEffectDistortionRender.m */; };
+		18657D9023951B1800A3D3EB /* RDLOTEffectDistortionRender.h in Headers */ = {isa = PBXBuildFile; fileRef = 18657D8E23951B1600A3D3EB /* RDLOTEffectDistortionRender.h */; };
+		18E3DA30235171AA008F3C5D /* RDLOTEffectDistortion.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3DA2E235171AA008F3C5D /* RDLOTEffectDistortion.m */; };
+		18E3DA31235171AA008F3C5D /* RDLOTEffectDistortion.h in Headers */ = {isa = PBXBuildFile; fileRef = 18E3DA2F235171AA008F3C5D /* RDLOTEffectDistortion.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		182017EC20C69C7C0045B2CE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		182017EE20C69C7C0045B2CE /* libRDLottie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRDLottie.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		182E857B21C2334B0088C18B /* RDLOTCompositionContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTCompositionContainer.h; sourceTree = "<group>"; };
+		182E857C21C2334B0088C18B /* RDLOTCompositionContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTCompositionContainer.m; sourceTree = "<group>"; };
+		182E857D21C2334C0088C18B /* RDLOTLayerContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTLayerContainer.h; sourceTree = "<group>"; };
+		182E857E21C2334C0088C18B /* RDLOTLayerContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTLayerContainer.m; sourceTree = "<group>"; };
+		182E857F21C2334C0088C18B /* RDLOTMaskContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTMaskContainer.h; sourceTree = "<group>"; };
+		182E858021C2334C0088C18B /* RDLOTMaskContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTMaskContainer.m; sourceTree = "<group>"; };
+		182E858221C2334C0088C18B /* RDLOTBezierData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTBezierData.h; sourceTree = "<group>"; };
+		182E858321C2334C0088C18B /* RDLOTBezierData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTBezierData.m; sourceTree = "<group>"; };
+		182E858421C2334C0088C18B /* RDLOTKeyframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTKeyframe.h; sourceTree = "<group>"; };
+		182E858521C2334C0088C18B /* RDLOTKeyframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTKeyframe.m; sourceTree = "<group>"; };
+		182E858721C2334C0088C18B /* CGGeometry+RDLOTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+RDLOTAdditions.h"; sourceTree = "<group>"; };
+		182E858821C2334C0088C18B /* CGGeometry+RDLOTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGGeometry+RDLOTAdditions.m"; sourceTree = "<group>"; };
+		182E858921C2334C0088C18B /* RDLOTBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTBezierPath.h; sourceTree = "<group>"; };
+		182E858A21C2334C0088C18B /* RDLOTBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTBezierPath.m; sourceTree = "<group>"; };
+		182E858B21C2334C0088C18B /* RDLOTHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTHelpers.h; sourceTree = "<group>"; };
+		182E858C21C2334C0088C18B /* RDLOTRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTRadialGradientLayer.h; sourceTree = "<group>"; };
+		182E858D21C2334C0088C18B /* RDLOTRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTRadialGradientLayer.m; sourceTree = "<group>"; };
+		182E858E21C2334C0088C18B /* UIColor+RDExpanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RDExpanded.h"; sourceTree = "<group>"; };
+		182E858F21C2334C0088C18B /* UIColor+RDExpanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RDExpanded.m"; sourceTree = "<group>"; };
+		182E859121C2334C0088C18B /* CALayer+RDCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+RDCompat.h"; sourceTree = "<group>"; };
+		182E859221C2334C0088C18B /* CALayer+RDCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+RDCompat.m"; sourceTree = "<group>"; };
+		182E859321C2334C0088C18B /* NSValue+RDCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+RDCompat.h"; sourceTree = "<group>"; };
+		182E859421C2334C0088C18B /* NSValue+RDCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+RDCompat.m"; sourceTree = "<group>"; };
+		182E859521C2334C0088C18B /* RDLOTPlatformCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTPlatformCompat.h; sourceTree = "<group>"; };
+		182E859621C2334C0088C18B /* UIBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBezierPath.h; sourceTree = "<group>"; };
+		182E859721C2334C0088C18B /* UIBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBezierPath.m; sourceTree = "<group>"; };
+		182E859821C2334C0088C18B /* UIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColor.h; sourceTree = "<group>"; };
+		182E859921C2334C0088C18B /* UIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColor.m; sourceTree = "<group>"; };
+		182E859B21C2334C0088C18B /* RDLOTAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTAsset.h; sourceTree = "<group>"; };
+		182E859C21C2334C0088C18B /* RDLOTAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTAsset.m; sourceTree = "<group>"; };
+		182E859D21C2334C0088C18B /* RDLOTAssetGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTAssetGroup.h; sourceTree = "<group>"; };
+		182E859E21C2334C0088C18B /* RDLOTAssetGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTAssetGroup.m; sourceTree = "<group>"; };
+		182E859F21C2334C0088C18B /* RDLOTLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTLayer.h; sourceTree = "<group>"; };
+		182E85A021C2334C0088C18B /* RDLOTLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTLayer.m; sourceTree = "<group>"; };
+		182E85A121C2334C0088C18B /* RDLOTLayerGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTLayerGroup.h; sourceTree = "<group>"; };
+		182E85A221C2334C0088C18B /* RDLOTLayerGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTLayerGroup.m; sourceTree = "<group>"; };
+		182E85A321C2334C0088C18B /* RDLOTMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTMask.h; sourceTree = "<group>"; };
+		182E85A421C2334C0088C18B /* RDLOTMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTMask.m; sourceTree = "<group>"; };
+		182E85A521C2334C0088C18B /* RDLOTModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTModels.h; sourceTree = "<group>"; };
+		182E85A621C2334C0088C18B /* RDLOTShapeCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTShapeCircle.h; sourceTree = "<group>"; };
+		182E85A721C2334C0088C18B /* RDLOTShapeCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTShapeCircle.m; sourceTree = "<group>"; };
+		182E85A821C2334C0088C18B /* RDLOTShapeFill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTShapeFill.h; sourceTree = "<group>"; };
+		182E85A921C2334C0088C18B /* RDLOTShapeFill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTShapeFill.m; sourceTree = "<group>"; };
+		182E85AA21C2334C0088C18B /* RDLOTShapeGradientFill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTShapeGradientFill.h; sourceTree = "<group>"; };
+		182E85AB21C2334C0088C18B /* RDLOTShapeGradientFill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTShapeGradientFill.m; sourceTree = "<group>"; };
+		182E85AC21C2334C0088C18B /* RDLOTShapeGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTShapeGroup.h; sourceTree = "<group>"; };
+		182E85AD21C2334C0088C18B /* RDLOTShapeGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTShapeGroup.m; sourceTree = "<group>"; };
+		182E85AE21C2334C0088C18B /* RDLOTShapePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTShapePath.h; sourceTree = "<group>"; };
+		182E85AF21C2334C0088C18B /* RDLOTShapePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTShapePath.m; sourceTree = "<group>"; };
+		182E85B021C2334C0088C18B /* RDLOTShapeRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTShapeRectangle.h; sourceTree = "<group>"; };
+		182E85B121C2334C0088C18B /* RDLOTShapeRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTShapeRectangle.m; sourceTree = "<group>"; };
+		182E85B221C2334C0088C18B /* RDLOTShapeRepeater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTShapeRepeater.h; sourceTree = "<group>"; };
+		182E85B321C2334C0088C18B /* RDLOTShapeRepeater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTShapeRepeater.m; sourceTree = "<group>"; };
+		182E85B421C2334C0088C18B /* RDLOTShapeStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTShapeStar.h; sourceTree = "<group>"; };
+		182E85B521C2334C0088C18B /* RDLOTShapeStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTShapeStar.m; sourceTree = "<group>"; };
+		182E85B621C2334C0088C18B /* RDLOTShapeStroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTShapeStroke.h; sourceTree = "<group>"; };
+		182E85B721C2334C0088C18B /* RDLOTShapeStroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTShapeStroke.m; sourceTree = "<group>"; };
+		182E85B821C2334C0088C18B /* RDLOTShapeTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTShapeTransform.h; sourceTree = "<group>"; };
+		182E85B921C2334C0088C18B /* RDLOTShapeTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTShapeTransform.m; sourceTree = "<group>"; };
+		182E85BA21C2334C0088C18B /* RDLOTShapeTrimPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTShapeTrimPath.h; sourceTree = "<group>"; };
+		182E85BB21C2334C0088C18B /* RDLOTShapeTrimPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTShapeTrimPath.m; sourceTree = "<group>"; };
+		182E85BD21C2334C0088C18B /* RDLOTAnimatedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTAnimatedControl.m; sourceTree = "<group>"; };
+		182E85BE21C2334C0088C18B /* RDLOTAnimatedSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTAnimatedSwitch.m; sourceTree = "<group>"; };
+		182E85BF21C2334C0088C18B /* RDLOTAnimationCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTAnimationCache.m; sourceTree = "<group>"; };
+		182E85C021C2334C0088C18B /* RDLOTAnimationTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTAnimationTransitionController.m; sourceTree = "<group>"; };
+		182E85C121C2334C0088C18B /* RDLOTAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTAnimationView.m; sourceTree = "<group>"; };
+		182E85C221C2334C0088C18B /* RDLOTAnimationView_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTAnimationView_Internal.h; sourceTree = "<group>"; };
+		182E85C321C2334C0088C18B /* RDLOTBlockCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTBlockCallback.m; sourceTree = "<group>"; };
+		182E85C421C2334C0088C18B /* RDLOTCacheProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTCacheProvider.m; sourceTree = "<group>"; };
+		182E85C521C2334C0088C18B /* RDLOTComposition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTComposition.m; sourceTree = "<group>"; };
+		182E85C621C2334C0088C18B /* RDLOTInterpolatorCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTInterpolatorCallback.m; sourceTree = "<group>"; };
+		182E85C721C2334C0088C18B /* RDLOTKeypath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTKeypath.m; sourceTree = "<group>"; };
+		182E85C821C2334C0088C18B /* RDLOTValueCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTValueCallback.m; sourceTree = "<group>"; };
+		182E85CA21C2334C0088C18B /* RDLOTAnimatedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTAnimatedControl.h; sourceTree = "<group>"; };
+		182E85CB21C2334C0088C18B /* RDLOTAnimatedSourceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTAnimatedSourceInfo.h; sourceTree = "<group>"; };
+		182E85CC21C2334C0088C18B /* RDLOTAnimatedSourceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTAnimatedSourceInfo.m; sourceTree = "<group>"; };
+		182E85CD21C2334C0088C18B /* RDLOTAnimatedSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTAnimatedSwitch.h; sourceTree = "<group>"; };
+		182E85CE21C2334C0088C18B /* RDLOTAnimationCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTAnimationCache.h; sourceTree = "<group>"; };
+		182E85CF21C2334C0088C18B /* RDLOTAnimationTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTAnimationTransitionController.h; sourceTree = "<group>"; };
+		182E85D021C2334C0088C18B /* RDLOTAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTAnimationView.h; sourceTree = "<group>"; };
+		182E85D121C2334C0088C18B /* RDLOTAnimationView_Compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTAnimationView_Compat.h; sourceTree = "<group>"; };
+		182E85D221C2334C0088C18B /* RDLOTBlockCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTBlockCallback.h; sourceTree = "<group>"; };
+		182E85D321C2334C0088C18B /* RDLOTCacheProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTCacheProvider.h; sourceTree = "<group>"; };
+		182E85D421C2334C0088C18B /* RDLOTComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTComposition.h; sourceTree = "<group>"; };
+		182E85D521C2334C0088C18B /* RDLOTInterpolatorCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTInterpolatorCallback.h; sourceTree = "<group>"; };
+		182E85D621C2334C0088C18B /* RDLOTKeypath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTKeypath.h; sourceTree = "<group>"; };
+		182E85D721C2334C0088C18B /* RDLottie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLottie.h; sourceTree = "<group>"; };
+		182E85D821C2334C0088C18B /* RDLOTValueCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTValueCallback.h; sourceTree = "<group>"; };
+		182E85D921C2334C0088C18B /* RDLOTValueDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTValueDelegate.h; sourceTree = "<group>"; };
+		182E85DA21C2334C0088C18B /* RDLottie-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RDLottie-PrefixHeader.pch"; sourceTree = "<group>"; };
+		182E85DD21C2334C0088C18B /* RDLOTCircleAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTCircleAnimator.h; sourceTree = "<group>"; };
+		182E85DE21C2334C0088C18B /* RDLOTCircleAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTCircleAnimator.m; sourceTree = "<group>"; };
+		182E85DF21C2334C0088C18B /* RDLOTPathAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTPathAnimator.h; sourceTree = "<group>"; };
+		182E85E021C2334C0088C18B /* RDLOTPathAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTPathAnimator.m; sourceTree = "<group>"; };
+		182E85E121C2334C0088C18B /* RDLOTPolygonAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTPolygonAnimator.h; sourceTree = "<group>"; };
+		182E85E221C2334C0088C18B /* RDLOTPolygonAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTPolygonAnimator.m; sourceTree = "<group>"; };
+		182E85E321C2334C0088C18B /* RDLOTPolystarAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTPolystarAnimator.h; sourceTree = "<group>"; };
+		182E85E421C2334C0088C18B /* RDLOTPolystarAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTPolystarAnimator.m; sourceTree = "<group>"; };
+		182E85E521C2334C0088C18B /* RDLOTRoundedRectAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTRoundedRectAnimator.h; sourceTree = "<group>"; };
+		182E85E621C2334C0088C18B /* RDLOTRoundedRectAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTRoundedRectAnimator.m; sourceTree = "<group>"; };
+		182E85E821C2334C0088C18B /* RDLOTArrayInterpolator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTArrayInterpolator.h; sourceTree = "<group>"; };
+		182E85E921C2334C0088C18B /* RDLOTArrayInterpolator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTArrayInterpolator.m; sourceTree = "<group>"; };
+		182E85EA21C2334C0088C18B /* RDLOTColorInterpolator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTColorInterpolator.h; sourceTree = "<group>"; };
+		182E85EB21C2334C0088C18B /* RDLOTColorInterpolator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTColorInterpolator.m; sourceTree = "<group>"; };
+		182E85EC21C2334C0088C18B /* RDLOTNumberInterpolator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTNumberInterpolator.h; sourceTree = "<group>"; };
+		182E85ED21C2334C0088C18B /* RDLOTNumberInterpolator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTNumberInterpolator.m; sourceTree = "<group>"; };
+		182E85EE21C2334C0088C18B /* RDLOTPathInterpolator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTPathInterpolator.h; sourceTree = "<group>"; };
+		182E85EF21C2334C0088C18B /* RDLOTPathInterpolator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTPathInterpolator.m; sourceTree = "<group>"; };
+		182E85F021C2334C0088C18B /* RDLOTPointInterpolator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTPointInterpolator.h; sourceTree = "<group>"; };
+		182E85F121C2334C0088C18B /* RDLOTPointInterpolator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTPointInterpolator.m; sourceTree = "<group>"; };
+		182E85F221C2334C0088C18B /* RDLOTSizeInterpolator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTSizeInterpolator.h; sourceTree = "<group>"; };
+		182E85F321C2334C0088C18B /* RDLOTSizeInterpolator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTSizeInterpolator.m; sourceTree = "<group>"; };
+		182E85F421C2334C0088C18B /* RDLOTTransformInterpolator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTTransformInterpolator.h; sourceTree = "<group>"; };
+		182E85F521C2334C0088C18B /* RDLOTTransformInterpolator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTTransformInterpolator.m; sourceTree = "<group>"; };
+		182E85F621C2334C0088C18B /* RDLOTValueInterpolator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTValueInterpolator.h; sourceTree = "<group>"; };
+		182E85F721C2334C0088C18B /* RDLOTValueInterpolator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTValueInterpolator.m; sourceTree = "<group>"; };
+		182E85F921C2334C0088C18B /* RDLOTTrimPathNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTTrimPathNode.h; sourceTree = "<group>"; };
+		182E85FA21C2334C0088C18B /* RDLOTTrimPathNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTTrimPathNode.m; sourceTree = "<group>"; };
+		182E85FB21C2334C0088C18B /* RDLOTAnimatorNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTAnimatorNode.h; sourceTree = "<group>"; };
+		182E85FC21C2334C0088C18B /* RDLOTAnimatorNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTAnimatorNode.m; sourceTree = "<group>"; };
+		182E85FD21C2334C0088C18B /* RDLOTRenderNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTRenderNode.h; sourceTree = "<group>"; };
+		182E85FE21C2334C0088C18B /* RDLOTRenderNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTRenderNode.m; sourceTree = "<group>"; };
+		182E860021C2334C0088C18B /* RDLOTFillRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTFillRenderer.h; sourceTree = "<group>"; };
+		182E860121C2334C0088C18B /* RDLOTFillRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTFillRenderer.m; sourceTree = "<group>"; };
+		182E860221C2334C0088C18B /* RDLOTGradientFillRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTGradientFillRender.h; sourceTree = "<group>"; };
+		182E860321C2334C0088C18B /* RDLOTGradientFillRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTGradientFillRender.m; sourceTree = "<group>"; };
+		182E860421C2334C0088C18B /* RDLOTRenderGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTRenderGroup.h; sourceTree = "<group>"; };
+		182E860521C2334C0088C18B /* RDLOTRenderGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTRenderGroup.m; sourceTree = "<group>"; };
+		182E860621C2334C0088C18B /* RDLOTRepeaterRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTRepeaterRenderer.h; sourceTree = "<group>"; };
+		182E860721C2334C0088C18B /* RDLOTRepeaterRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTRepeaterRenderer.m; sourceTree = "<group>"; };
+		182E860821C2334C0088C18B /* RDLOTStrokeRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTStrokeRenderer.h; sourceTree = "<group>"; };
+		182E860921C2334C0088C18B /* RDLOTStrokeRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTStrokeRenderer.m; sourceTree = "<group>"; };
+		1833B15C2351A9E2003957C3 /* RDLOTEffectBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTEffectBlur.h; sourceTree = "<group>"; };
+		1833B15D2351A9E2003957C3 /* RDLOTEffectTint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTEffectTint.h; sourceTree = "<group>"; };
+		1833B15E2351A9E2003957C3 /* RDLOTEffectBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTEffectBlur.m; sourceTree = "<group>"; };
+		1833B15F2351A9E2003957C3 /* RDLOTEffectTint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTEffectTint.m; sourceTree = "<group>"; };
+		1833B1642351AAD7003957C3 /* RDLOTEffectTintRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTEffectTintRender.h; sourceTree = "<group>"; };
+		1833B1652351AAD7003957C3 /* RDLOTEffectBlurRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTEffectBlurRender.h; sourceTree = "<group>"; };
+		1833B1662351AAD7003957C3 /* RDLOTEffectBlurRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTEffectBlurRender.m; sourceTree = "<group>"; };
+		1833B1672351AAD7003957C3 /* RDLOTEffectTintRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTEffectTintRender.m; sourceTree = "<group>"; };
+		183B76DB232A1D0D00BE3E62 /* RDLOTEffectGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTEffectGroup.h; sourceTree = "<group>"; };
+		183B76DD232A1D0F00BE3E62 /* RDLOTEffectGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTEffectGroup.m; sourceTree = "<group>"; };
+		18446D7D235D51D100212984 /* BCMeshTransform+DemoTransforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BCMeshTransform+DemoTransforms.h"; sourceTree = "<group>"; };
+		18446D7E235D51D100212984 /* BCMeshTransform+DemoTransforms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BCMeshTransform+DemoTransforms.m"; sourceTree = "<group>"; };
+		1848CDA12359B97C0051F2E4 /* BCMeshTransform+Interpolation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BCMeshTransform+Interpolation.h"; sourceTree = "<group>"; };
+		1848CDA22359B97C0051F2E4 /* BCMeshBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCMeshBuffer.m; sourceTree = "<group>"; };
+		1848CDA32359B97C0051F2E4 /* BCMeshContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCMeshContentView.m; sourceTree = "<group>"; };
+		1848CDA42359B97C0051F2E4 /* BCMeshTransform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BCMeshTransform.mm; sourceTree = "<group>"; };
+		1848CDA52359B97C0051F2E4 /* BCMeshShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMeshShader.h; sourceTree = "<group>"; };
+		1848CDA62359B97C0051F2E4 /* BCMeshTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCMeshTexture.m; sourceTree = "<group>"; };
+		1848CDA72359B97C0051F2E4 /* BCMeshTransformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMeshTransformView.h; sourceTree = "<group>"; };
+		1848CDA82359B97C0051F2E4 /* BCMeshShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = BCMeshShader.fsh; sourceTree = "<group>"; };
+		1848CDA92359B97C0051F2E4 /* BCMutableMeshTransform+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BCMutableMeshTransform+Convenience.m"; sourceTree = "<group>"; };
+		1848CDAA2359B97C0051F2E4 /* BCMeshTransformAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCMeshTransformAnimation.m; sourceTree = "<group>"; };
+		1848CDAB2359B97C0051F2E4 /* BCMeshContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMeshContentView.h; sourceTree = "<group>"; };
+		1848CDAC2359B97C0051F2E4 /* BCMeshBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMeshBuffer.h; sourceTree = "<group>"; };
+		1848CDAD2359B97C0051F2E4 /* BCMeshTransform+Interpolation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BCMeshTransform+Interpolation.m"; sourceTree = "<group>"; };
+		1848CDAE2359B97C0051F2E4 /* BCMeshTransformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCMeshTransformView.m; sourceTree = "<group>"; };
+		1848CDAF2359B97C0051F2E4 /* BCMeshTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMeshTexture.h; sourceTree = "<group>"; };
+		1848CDB02359B97C0051F2E4 /* BCMeshShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCMeshShader.m; sourceTree = "<group>"; };
+		1848CDB12359B97C0051F2E4 /* BCMeshTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMeshTransform.h; sourceTree = "<group>"; };
+		1848CDB22359B97C0051F2E4 /* BCMeshTransformAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMeshTransformAnimation.h; sourceTree = "<group>"; };
+		1848CDB32359B97C0051F2E4 /* BCMutableMeshTransform+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BCMutableMeshTransform+Convenience.h"; sourceTree = "<group>"; };
+		1848CDB42359B97C0051F2E4 /* BCMeshShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = BCMeshShader.vsh; sourceTree = "<group>"; };
+		1848CDC82359BD600051F2E4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		1848CDCA2359BD6B0051F2E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		1848CDCC2359BD790051F2E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1848CDCE2359BD820051F2E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1848CDD02359BE260051F2E4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		184DBE482341B95500C402E5 /* RDLOTRenderEffectNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTRenderEffectNode.m; sourceTree = "<group>"; };
+		184DBE492341B95500C402E5 /* RDLOTRenderEffectNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTRenderEffectNode.h; sourceTree = "<group>"; };
+		18657D892394F2E800A3D3EB /* RDLOTTintCIFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTTintCIFilter.m; sourceTree = "<group>"; };
+		18657D8A2394F2E800A3D3EB /* RDLOTTintCIFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTTintCIFilter.h; sourceTree = "<group>"; };
+		18657D8D23951B1400A3D3EB /* RDLOTEffectDistortionRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTEffectDistortionRender.m; sourceTree = "<group>"; };
+		18657D8E23951B1600A3D3EB /* RDLOTEffectDistortionRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTEffectDistortionRender.h; sourceTree = "<group>"; };
+		18E3DA2E235171AA008F3C5D /* RDLOTEffectDistortion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLOTEffectDistortion.m; sourceTree = "<group>"; };
+		18E3DA2F235171AA008F3C5D /* RDLOTEffectDistortion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLOTEffectDistortion.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		182017EB20C69C7C0045B2CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1848CDD12359BE260051F2E4 /* QuartzCore.framework in Frameworks */,
+				1848CDCF2359BD820051F2E4 /* UIKit.framework in Frameworks */,
+				1848CDCD2359BD790051F2E4 /* Foundation.framework in Frameworks */,
+				1848CDCB2359BD6C0051F2E4 /* CoreGraphics.framework in Frameworks */,
+				1848CDC92359BD600051F2E4 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		182017E520C69C7C0045B2CE = {
+			isa = PBXGroup;
+			children = (
+				182E857921C2334B0088C18B /* RDLottie */,
+				182017EF20C69C7C0045B2CE /* Products */,
+				1848CDC72359BD5F0051F2E4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		182017EF20C69C7C0045B2CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				182017EE20C69C7C0045B2CE /* libRDLottie.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		182E857921C2334B0088C18B /* RDLottie */ = {
+			isa = PBXGroup;
+			children = (
+				182E857A21C2334B0088C18B /* AnimatableLayers */,
+				182E858121C2334C0088C18B /* AnimatableProperties */,
+				182E858621C2334C0088C18B /* Extensions */,
+				182E859021C2334C0088C18B /* MacCompatability */,
+				182E859A21C2334C0088C18B /* Models */,
+				182E85BC21C2334C0088C18B /* Private */,
+				182E85C921C2334C0088C18B /* PublicHeaders */,
+				182E85DA21C2334C0088C18B /* RDLottie-PrefixHeader.pch */,
+				182E85DB21C2334C0088C18B /* RenderSystem */,
+			);
+			path = RDLottie;
+			sourceTree = "<group>";
+		};
+		182E857A21C2334B0088C18B /* AnimatableLayers */ = {
+			isa = PBXGroup;
+			children = (
+				182E857B21C2334B0088C18B /* RDLOTCompositionContainer.h */,
+				182E857C21C2334B0088C18B /* RDLOTCompositionContainer.m */,
+				182E857D21C2334C0088C18B /* RDLOTLayerContainer.h */,
+				182E857E21C2334C0088C18B /* RDLOTLayerContainer.m */,
+				182E857F21C2334C0088C18B /* RDLOTMaskContainer.h */,
+				182E858021C2334C0088C18B /* RDLOTMaskContainer.m */,
+			);
+			path = AnimatableLayers;
+			sourceTree = "<group>";
+		};
+		182E858121C2334C0088C18B /* AnimatableProperties */ = {
+			isa = PBXGroup;
+			children = (
+				182E858221C2334C0088C18B /* RDLOTBezierData.h */,
+				182E858321C2334C0088C18B /* RDLOTBezierData.m */,
+				182E858421C2334C0088C18B /* RDLOTKeyframe.h */,
+				182E858521C2334C0088C18B /* RDLOTKeyframe.m */,
+			);
+			path = AnimatableProperties;
+			sourceTree = "<group>";
+		};
+		182E858621C2334C0088C18B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				182E858721C2334C0088C18B /* CGGeometry+RDLOTAdditions.h */,
+				182E858821C2334C0088C18B /* CGGeometry+RDLOTAdditions.m */,
+				182E858921C2334C0088C18B /* RDLOTBezierPath.h */,
+				182E858A21C2334C0088C18B /* RDLOTBezierPath.m */,
+				182E858B21C2334C0088C18B /* RDLOTHelpers.h */,
+				182E858C21C2334C0088C18B /* RDLOTRadialGradientLayer.h */,
+				182E858D21C2334C0088C18B /* RDLOTRadialGradientLayer.m */,
+				182E858E21C2334C0088C18B /* UIColor+RDExpanded.h */,
+				182E858F21C2334C0088C18B /* UIColor+RDExpanded.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		182E859021C2334C0088C18B /* MacCompatability */ = {
+			isa = PBXGroup;
+			children = (
+				182E859121C2334C0088C18B /* CALayer+RDCompat.h */,
+				182E859221C2334C0088C18B /* CALayer+RDCompat.m */,
+				182E859321C2334C0088C18B /* NSValue+RDCompat.h */,
+				182E859421C2334C0088C18B /* NSValue+RDCompat.m */,
+				182E859521C2334C0088C18B /* RDLOTPlatformCompat.h */,
+				182E859621C2334C0088C18B /* UIBezierPath.h */,
+				182E859721C2334C0088C18B /* UIBezierPath.m */,
+				182E859821C2334C0088C18B /* UIColor.h */,
+				182E859921C2334C0088C18B /* UIColor.m */,
+			);
+			path = MacCompatability;
+			sourceTree = "<group>";
+		};
+		182E859A21C2334C0088C18B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				182E859B21C2334C0088C18B /* RDLOTAsset.h */,
+				182E859C21C2334C0088C18B /* RDLOTAsset.m */,
+				182E859D21C2334C0088C18B /* RDLOTAssetGroup.h */,
+				182E859E21C2334C0088C18B /* RDLOTAssetGroup.m */,
+				182E859F21C2334C0088C18B /* RDLOTLayer.h */,
+				182E85A021C2334C0088C18B /* RDLOTLayer.m */,
+				182E85A121C2334C0088C18B /* RDLOTLayerGroup.h */,
+				182E85A221C2334C0088C18B /* RDLOTLayerGroup.m */,
+				182E85A321C2334C0088C18B /* RDLOTMask.h */,
+				182E85A421C2334C0088C18B /* RDLOTMask.m */,
+				182E85A521C2334C0088C18B /* RDLOTModels.h */,
+				182E85A621C2334C0088C18B /* RDLOTShapeCircle.h */,
+				182E85A721C2334C0088C18B /* RDLOTShapeCircle.m */,
+				182E85A821C2334C0088C18B /* RDLOTShapeFill.h */,
+				182E85A921C2334C0088C18B /* RDLOTShapeFill.m */,
+				182E85AA21C2334C0088C18B /* RDLOTShapeGradientFill.h */,
+				182E85AB21C2334C0088C18B /* RDLOTShapeGradientFill.m */,
+				182E85AC21C2334C0088C18B /* RDLOTShapeGroup.h */,
+				182E85AD21C2334C0088C18B /* RDLOTShapeGroup.m */,
+				182E85AE21C2334C0088C18B /* RDLOTShapePath.h */,
+				182E85AF21C2334C0088C18B /* RDLOTShapePath.m */,
+				182E85B021C2334C0088C18B /* RDLOTShapeRectangle.h */,
+				182E85B121C2334C0088C18B /* RDLOTShapeRectangle.m */,
+				182E85B221C2334C0088C18B /* RDLOTShapeRepeater.h */,
+				182E85B321C2334C0088C18B /* RDLOTShapeRepeater.m */,
+				182E85B421C2334C0088C18B /* RDLOTShapeStar.h */,
+				182E85B521C2334C0088C18B /* RDLOTShapeStar.m */,
+				182E85B621C2334C0088C18B /* RDLOTShapeStroke.h */,
+				182E85B721C2334C0088C18B /* RDLOTShapeStroke.m */,
+				182E85B821C2334C0088C18B /* RDLOTShapeTransform.h */,
+				182E85B921C2334C0088C18B /* RDLOTShapeTransform.m */,
+				182E85BA21C2334C0088C18B /* RDLOTShapeTrimPath.h */,
+				182E85BB21C2334C0088C18B /* RDLOTShapeTrimPath.m */,
+				18E3DA2F235171AA008F3C5D /* RDLOTEffectDistortion.h */,
+				18E3DA2E235171AA008F3C5D /* RDLOTEffectDistortion.m */,
+				1833B15C2351A9E2003957C3 /* RDLOTEffectBlur.h */,
+				1833B15E2351A9E2003957C3 /* RDLOTEffectBlur.m */,
+				1833B15D2351A9E2003957C3 /* RDLOTEffectTint.h */,
+				1833B15F2351A9E2003957C3 /* RDLOTEffectTint.m */,
+				183B76DB232A1D0D00BE3E62 /* RDLOTEffectGroup.h */,
+				183B76DD232A1D0F00BE3E62 /* RDLOTEffectGroup.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		182E85BC21C2334C0088C18B /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				182E85BD21C2334C0088C18B /* RDLOTAnimatedControl.m */,
+				182E85BE21C2334C0088C18B /* RDLOTAnimatedSwitch.m */,
+				182E85BF21C2334C0088C18B /* RDLOTAnimationCache.m */,
+				182E85C021C2334C0088C18B /* RDLOTAnimationTransitionController.m */,
+				182E85C121C2334C0088C18B /* RDLOTAnimationView.m */,
+				182E85C221C2334C0088C18B /* RDLOTAnimationView_Internal.h */,
+				182E85C321C2334C0088C18B /* RDLOTBlockCallback.m */,
+				182E85C421C2334C0088C18B /* RDLOTCacheProvider.m */,
+				182E85C521C2334C0088C18B /* RDLOTComposition.m */,
+				182E85C621C2334C0088C18B /* RDLOTInterpolatorCallback.m */,
+				182E85C721C2334C0088C18B /* RDLOTKeypath.m */,
+				182E85C821C2334C0088C18B /* RDLOTValueCallback.m */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		182E85C921C2334C0088C18B /* PublicHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				182E85CA21C2334C0088C18B /* RDLOTAnimatedControl.h */,
+				182E85CB21C2334C0088C18B /* RDLOTAnimatedSourceInfo.h */,
+				182E85CC21C2334C0088C18B /* RDLOTAnimatedSourceInfo.m */,
+				182E85CD21C2334C0088C18B /* RDLOTAnimatedSwitch.h */,
+				182E85CE21C2334C0088C18B /* RDLOTAnimationCache.h */,
+				182E85CF21C2334C0088C18B /* RDLOTAnimationTransitionController.h */,
+				182E85D021C2334C0088C18B /* RDLOTAnimationView.h */,
+				182E85D121C2334C0088C18B /* RDLOTAnimationView_Compat.h */,
+				182E85D221C2334C0088C18B /* RDLOTBlockCallback.h */,
+				182E85D321C2334C0088C18B /* RDLOTCacheProvider.h */,
+				182E85D421C2334C0088C18B /* RDLOTComposition.h */,
+				182E85D521C2334C0088C18B /* RDLOTInterpolatorCallback.h */,
+				182E85D621C2334C0088C18B /* RDLOTKeypath.h */,
+				182E85D721C2334C0088C18B /* RDLottie.h */,
+				182E85D821C2334C0088C18B /* RDLOTValueCallback.h */,
+				182E85D921C2334C0088C18B /* RDLOTValueDelegate.h */,
+			);
+			path = PublicHeaders;
+			sourceTree = "<group>";
+		};
+		182E85DB21C2334C0088C18B /* RenderSystem */ = {
+			isa = PBXGroup;
+			children = (
+				182E85DC21C2334C0088C18B /* AnimatorNodes */,
+				182E85E721C2334C0088C18B /* InterpolatorNodes */,
+				182E85F821C2334C0088C18B /* ManipulatorNodes */,
+				182E85FB21C2334C0088C18B /* RDLOTAnimatorNode.h */,
+				184DBE492341B95500C402E5 /* RDLOTRenderEffectNode.h */,
+				184DBE482341B95500C402E5 /* RDLOTRenderEffectNode.m */,
+				182E85FC21C2334C0088C18B /* RDLOTAnimatorNode.m */,
+				182E85FD21C2334C0088C18B /* RDLOTRenderNode.h */,
+				182E85FE21C2334C0088C18B /* RDLOTRenderNode.m */,
+				182E85FF21C2334C0088C18B /* RenderNodes */,
+			);
+			path = RenderSystem;
+			sourceTree = "<group>";
+		};
+		182E85DC21C2334C0088C18B /* AnimatorNodes */ = {
+			isa = PBXGroup;
+			children = (
+				182E85DD21C2334C0088C18B /* RDLOTCircleAnimator.h */,
+				182E85DE21C2334C0088C18B /* RDLOTCircleAnimator.m */,
+				182E85DF21C2334C0088C18B /* RDLOTPathAnimator.h */,
+				182E85E021C2334C0088C18B /* RDLOTPathAnimator.m */,
+				182E85E121C2334C0088C18B /* RDLOTPolygonAnimator.h */,
+				182E85E221C2334C0088C18B /* RDLOTPolygonAnimator.m */,
+				182E85E321C2334C0088C18B /* RDLOTPolystarAnimator.h */,
+				182E85E421C2334C0088C18B /* RDLOTPolystarAnimator.m */,
+				182E85E521C2334C0088C18B /* RDLOTRoundedRectAnimator.h */,
+				182E85E621C2334C0088C18B /* RDLOTRoundedRectAnimator.m */,
+			);
+			path = AnimatorNodes;
+			sourceTree = "<group>";
+		};
+		182E85E721C2334C0088C18B /* InterpolatorNodes */ = {
+			isa = PBXGroup;
+			children = (
+				182E85E821C2334C0088C18B /* RDLOTArrayInterpolator.h */,
+				182E85E921C2334C0088C18B /* RDLOTArrayInterpolator.m */,
+				182E85EA21C2334C0088C18B /* RDLOTColorInterpolator.h */,
+				182E85EB21C2334C0088C18B /* RDLOTColorInterpolator.m */,
+				182E85EC21C2334C0088C18B /* RDLOTNumberInterpolator.h */,
+				182E85ED21C2334C0088C18B /* RDLOTNumberInterpolator.m */,
+				182E85EE21C2334C0088C18B /* RDLOTPathInterpolator.h */,
+				182E85EF21C2334C0088C18B /* RDLOTPathInterpolator.m */,
+				182E85F021C2334C0088C18B /* RDLOTPointInterpolator.h */,
+				182E85F121C2334C0088C18B /* RDLOTPointInterpolator.m */,
+				182E85F221C2334C0088C18B /* RDLOTSizeInterpolator.h */,
+				182E85F321C2334C0088C18B /* RDLOTSizeInterpolator.m */,
+				182E85F421C2334C0088C18B /* RDLOTTransformInterpolator.h */,
+				182E85F521C2334C0088C18B /* RDLOTTransformInterpolator.m */,
+				182E85F621C2334C0088C18B /* RDLOTValueInterpolator.h */,
+				182E85F721C2334C0088C18B /* RDLOTValueInterpolator.m */,
+			);
+			path = InterpolatorNodes;
+			sourceTree = "<group>";
+		};
+		182E85F821C2334C0088C18B /* ManipulatorNodes */ = {
+			isa = PBXGroup;
+			children = (
+				182E85F921C2334C0088C18B /* RDLOTTrimPathNode.h */,
+				182E85FA21C2334C0088C18B /* RDLOTTrimPathNode.m */,
+			);
+			path = ManipulatorNodes;
+			sourceTree = "<group>";
+		};
+		182E85FF21C2334C0088C18B /* RenderNodes */ = {
+			isa = PBXGroup;
+			children = (
+				1848CDA02359B97C0051F2E4 /* BCMeshTransformView */,
+				182E860021C2334C0088C18B /* RDLOTFillRenderer.h */,
+				182E860121C2334C0088C18B /* RDLOTFillRenderer.m */,
+				182E860221C2334C0088C18B /* RDLOTGradientFillRender.h */,
+				182E860321C2334C0088C18B /* RDLOTGradientFillRender.m */,
+				18657D8E23951B1600A3D3EB /* RDLOTEffectDistortionRender.h */,
+				18657D8D23951B1400A3D3EB /* RDLOTEffectDistortionRender.m */,
+				18446D7D235D51D100212984 /* BCMeshTransform+DemoTransforms.h */,
+				18446D7E235D51D100212984 /* BCMeshTransform+DemoTransforms.m */,
+				1833B1652351AAD7003957C3 /* RDLOTEffectBlurRender.h */,
+				1833B1662351AAD7003957C3 /* RDLOTEffectBlurRender.m */,
+				1833B1642351AAD7003957C3 /* RDLOTEffectTintRender.h */,
+				1833B1672351AAD7003957C3 /* RDLOTEffectTintRender.m */,
+				18657D8A2394F2E800A3D3EB /* RDLOTTintCIFilter.h */,
+				18657D892394F2E800A3D3EB /* RDLOTTintCIFilter.m */,
+				182E860421C2334C0088C18B /* RDLOTRenderGroup.h */,
+				182E860521C2334C0088C18B /* RDLOTRenderGroup.m */,
+				182E860621C2334C0088C18B /* RDLOTRepeaterRenderer.h */,
+				182E860721C2334C0088C18B /* RDLOTRepeaterRenderer.m */,
+				182E860821C2334C0088C18B /* RDLOTStrokeRenderer.h */,
+				182E860921C2334C0088C18B /* RDLOTStrokeRenderer.m */,
+			);
+			path = RenderNodes;
+			sourceTree = "<group>";
+		};
+		1848CDA02359B97C0051F2E4 /* BCMeshTransformView */ = {
+			isa = PBXGroup;
+			children = (
+				1848CDAC2359B97C0051F2E4 /* BCMeshBuffer.h */,
+				1848CDA22359B97C0051F2E4 /* BCMeshBuffer.m */,
+				1848CDAB2359B97C0051F2E4 /* BCMeshContentView.h */,
+				1848CDA32359B97C0051F2E4 /* BCMeshContentView.m */,
+				1848CDB12359B97C0051F2E4 /* BCMeshTransform.h */,
+				1848CDA42359B97C0051F2E4 /* BCMeshTransform.mm */,
+				1848CDA52359B97C0051F2E4 /* BCMeshShader.h */,
+				1848CDB02359B97C0051F2E4 /* BCMeshShader.m */,
+				1848CDAF2359B97C0051F2E4 /* BCMeshTexture.h */,
+				1848CDA62359B97C0051F2E4 /* BCMeshTexture.m */,
+				1848CDA82359B97C0051F2E4 /* BCMeshShader.fsh */,
+				1848CDB22359B97C0051F2E4 /* BCMeshTransformAnimation.h */,
+				1848CDAA2359B97C0051F2E4 /* BCMeshTransformAnimation.m */,
+				1848CDA12359B97C0051F2E4 /* BCMeshTransform+Interpolation.h */,
+				1848CDAD2359B97C0051F2E4 /* BCMeshTransform+Interpolation.m */,
+				1848CDA72359B97C0051F2E4 /* BCMeshTransformView.h */,
+				1848CDAE2359B97C0051F2E4 /* BCMeshTransformView.m */,
+				1848CDA92359B97C0051F2E4 /* BCMutableMeshTransform+Convenience.m */,
+				1848CDB32359B97C0051F2E4 /* BCMutableMeshTransform+Convenience.h */,
+				1848CDB42359B97C0051F2E4 /* BCMeshShader.vsh */,
+			);
+			path = BCMeshTransformView;
+			sourceTree = "<group>";
+		};
+		1848CDC72359BD5F0051F2E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1848CDD02359BE260051F2E4 /* QuartzCore.framework */,
+				1848CDCE2359BD820051F2E4 /* UIKit.framework */,
+				1848CDCC2359BD790051F2E4 /* Foundation.framework */,
+				1848CDCA2359BD6B0051F2E4 /* CoreGraphics.framework */,
+				1848CDC82359BD600051F2E4 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1820196220C69FF80045B2CE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182E861421C2334C0088C18B /* CGGeometry+RDLOTAdditions.h in Headers */,
+				182E864321C2334C0088C18B /* RDLOTShapeTransform.h in Headers */,
+				182E861B21C2334C0088C18B /* UIColor+RDExpanded.h in Headers */,
+				182E867C21C2334C0088C18B /* RDLOTValueInterpolator.h in Headers */,
+				182E862C21C2334C0088C18B /* RDLOTLayerGroup.h in Headers */,
+				182E868A21C2334C0088C18B /* RDLOTRepeaterRenderer.h in Headers */,
+				182E865A21C2334C0088C18B /* RDLOTAnimationView_Compat.h in Headers */,
+				182E861221C2334C0088C18B /* RDLOTKeyframe.h in Headers */,
+				182E863D21C2334C0088C18B /* RDLOTShapeRepeater.h in Headers */,
+				182E866221C2334C0088C18B /* RDLOTValueDelegate.h in Headers */,
+				182E861F21C2334C0088C18B /* NSValue+RDCompat.h in Headers */,
+				182E865C21C2334C0088C18B /* RDLOTCacheProvider.h in Headers */,
+				182E866621C2334C0088C18B /* RDLOTPathAnimator.h in Headers */,
+				182E866021C2334C0088C18B /* RDLottie.h in Headers */,
+				182E867821C2334C0088C18B /* RDLOTSizeInterpolator.h in Headers */,
+				1833B1602351A9E2003957C3 /* RDLOTEffectBlur.h in Headers */,
+				1848CDB52359B97D0051F2E4 /* BCMeshTransform+Interpolation.h in Headers */,
+				183B76E1232A1D1000BE3E62 /* RDLOTEffectGroup.h in Headers */,
+				1848CDBB2359B97D0051F2E4 /* BCMeshTransformView.h in Headers */,
+				182E862A21C2334C0088C18B /* RDLOTLayer.h in Headers */,
+				182E867E21C2334C0088C18B /* RDLOTTrimPathNode.h in Headers */,
+				18657D9023951B1800A3D3EB /* RDLOTEffectDistortionRender.h in Headers */,
+				182E860C21C2334C0088C18B /* RDLOTLayerContainer.h in Headers */,
+				1833B1692351AAD7003957C3 /* RDLOTEffectBlurRender.h in Headers */,
+				182E865621C2334C0088C18B /* RDLOTAnimatedSwitch.h in Headers */,
+				182E867221C2334C0088C18B /* RDLOTNumberInterpolator.h in Headers */,
+				182E866C21C2334C0088C18B /* RDLOTRoundedRectAnimator.h in Headers */,
+				182E864521C2334C0088C18B /* RDLOTShapeTrimPath.h in Headers */,
+				182E861621C2334C0088C18B /* RDLOTBezierPath.h in Headers */,
+				182E865E21C2334C0088C18B /* RDLOTInterpolatorCallback.h in Headers */,
+				1848CDC42359B97D0051F2E4 /* BCMeshTransform.h in Headers */,
+				182E862221C2334C0088C18B /* UIBezierPath.h in Headers */,
+				182E866321C2334C0088C18B /* RDLottie-PrefixHeader.pch in Headers */,
+				182E867021C2334C0088C18B /* RDLOTColorInterpolator.h in Headers */,
+				182E862621C2334C0088C18B /* RDLOTAsset.h in Headers */,
+				1848CDC52359B97D0051F2E4 /* BCMeshTransformAnimation.h in Headers */,
+				182E862821C2334C0088C18B /* RDLOTAssetGroup.h in Headers */,
+				182E861821C2334C0088C18B /* RDLOTHelpers.h in Headers */,
+				1848CDC62359B97D0051F2E4 /* BCMutableMeshTransform+Convenience.h in Headers */,
+				1848CDBF2359B97D0051F2E4 /* BCMeshBuffer.h in Headers */,
+				182E865B21C2334C0088C18B /* RDLOTBlockCallback.h in Headers */,
+				1833B1682351AAD7003957C3 /* RDLOTEffectTintRender.h in Headers */,
+				18E3DA31235171AA008F3C5D /* RDLOTEffectDistortion.h in Headers */,
+				182E866A21C2334C0088C18B /* RDLOTPolystarAnimator.h in Headers */,
+				182E863F21C2334C0088C18B /* RDLOTShapeStar.h in Headers */,
+				182E864121C2334C0088C18B /* RDLOTShapeStroke.h in Headers */,
+				182E866121C2334C0088C18B /* RDLOTValueCallback.h in Headers */,
+				182E868421C2334C0088C18B /* RDLOTFillRenderer.h in Headers */,
+				182E863121C2334C0088C18B /* RDLOTShapeCircle.h in Headers */,
+				182E866821C2334C0088C18B /* RDLOTPolygonAnimator.h in Headers */,
+				182E863921C2334C0088C18B /* RDLOTShapePath.h in Headers */,
+				182E862421C2334C0088C18B /* UIColor.h in Headers */,
+				182E865421C2334C0088C18B /* RDLOTAnimatedSourceInfo.h in Headers */,
+				1833B1612351A9E2003957C3 /* RDLOTEffectTint.h in Headers */,
+				182E865F21C2334C0088C18B /* RDLOTKeypath.h in Headers */,
+				182E861D21C2334C0088C18B /* CALayer+RDCompat.h in Headers */,
+				182E865721C2334C0088C18B /* RDLOTAnimationCache.h in Headers */,
+				182E862121C2334C0088C18B /* RDLOTPlatformCompat.h in Headers */,
+				182E867A21C2334C0088C18B /* RDLOTTransformInterpolator.h in Headers */,
+				1848CDC22359B97D0051F2E4 /* BCMeshTexture.h in Headers */,
+				182E863321C2334C0088C18B /* RDLOTShapeFill.h in Headers */,
+				182E868821C2334C0088C18B /* RDLOTRenderGroup.h in Headers */,
+				182E864C21C2334C0088C18B /* RDLOTAnimationView_Internal.h in Headers */,
+				182E863721C2334C0088C18B /* RDLOTShapeGroup.h in Headers */,
+				182E868021C2334C0088C18B /* RDLOTAnimatorNode.h in Headers */,
+				182E868221C2334C0088C18B /* RDLOTRenderNode.h in Headers */,
+				182E866421C2334C0088C18B /* RDLOTCircleAnimator.h in Headers */,
+				1848CDB92359B97D0051F2E4 /* BCMeshShader.h in Headers */,
+				182E863521C2334C0088C18B /* RDLOTShapeGradientFill.h in Headers */,
+				182E867621C2334C0088C18B /* RDLOTPointInterpolator.h in Headers */,
+				18446D7F235D51D100212984 /* BCMeshTransform+DemoTransforms.h in Headers */,
+				182E866E21C2334C0088C18B /* RDLOTArrayInterpolator.h in Headers */,
+				182E865921C2334C0088C18B /* RDLOTAnimationView.h in Headers */,
+				184DBE4B2341B95500C402E5 /* RDLOTRenderEffectNode.h in Headers */,
+				182E860E21C2334C0088C18B /* RDLOTMaskContainer.h in Headers */,
+				1848CDBE2359B97D0051F2E4 /* BCMeshContentView.h in Headers */,
+				18657D8C2394F2E900A3D3EB /* RDLOTTintCIFilter.h in Headers */,
+				182E865821C2334C0088C18B /* RDLOTAnimationTransitionController.h in Headers */,
+				182E865321C2334C0088C18B /* RDLOTAnimatedControl.h in Headers */,
+				182E863021C2334C0088C18B /* RDLOTModels.h in Headers */,
+				182E860A21C2334C0088C18B /* RDLOTCompositionContainer.h in Headers */,
+				182E868621C2334C0088C18B /* RDLOTGradientFillRender.h in Headers */,
+				182E861921C2334C0088C18B /* RDLOTRadialGradientLayer.h in Headers */,
+				182E863B21C2334C0088C18B /* RDLOTShapeRectangle.h in Headers */,
+				182E867421C2334C0088C18B /* RDLOTPathInterpolator.h in Headers */,
+				182E862E21C2334C0088C18B /* RDLOTMask.h in Headers */,
+				182E868C21C2334C0088C18B /* RDLOTStrokeRenderer.h in Headers */,
+				182E861021C2334C0088C18B /* RDLOTBezierData.h in Headers */,
+				182E865D21C2334C0088C18B /* RDLOTComposition.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		182017ED20C69C7C0045B2CE /* RDLottie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182017F720C69C7C0045B2CE /* Build configuration list for PBXNativeTarget "RDLottie" */;
+			buildPhases = (
+				182017EA20C69C7C0045B2CE /* Sources */,
+				182017EB20C69C7C0045B2CE /* Frameworks */,
+				182017EC20C69C7C0045B2CE /* CopyFiles */,
+				1820196220C69FF80045B2CE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RDLottie;
+			productName = Lottie;
+			productReference = 182017EE20C69C7C0045B2CE /* libRDLottie.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		182017E620C69C7C0045B2CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "北京锐动天地信息技术有限公司";
+				TargetAttributes = {
+					182017ED20C69C7C0045B2CE = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 182017E920C69C7C0045B2CE /* Build configuration list for PBXProject "RDLottie" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 182017E520C69C7C0045B2CE;
+			productRefGroup = 182017EF20C69C7C0045B2CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				182017ED20C69C7C0045B2CE /* RDLottie */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		182017EA20C69C7C0045B2CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18446D80235D51D100212984 /* BCMeshTransform+DemoTransforms.m in Sources */,
+				18E3DA30235171AA008F3C5D /* RDLOTEffectDistortion.m in Sources */,
+				1833B16A2351AAD7003957C3 /* RDLOTEffectBlurRender.m in Sources */,
+				182E863421C2334C0088C18B /* RDLOTShapeFill.m in Sources */,
+				182E861C21C2334C0088C18B /* UIColor+RDExpanded.m in Sources */,
+				182E867D21C2334C0088C18B /* RDLOTValueInterpolator.m in Sources */,
+				182E865521C2334C0088C18B /* RDLOTAnimatedSourceInfo.m in Sources */,
+				182E862321C2334C0088C18B /* UIBezierPath.m in Sources */,
+				182E865021C2334C0088C18B /* RDLOTInterpolatorCallback.m in Sources */,
+				182E863C21C2334C0088C18B /* RDLOTShapeRectangle.m in Sources */,
+				182E863821C2334C0088C18B /* RDLOTShapeGroup.m in Sources */,
+				182E862921C2334C0088C18B /* RDLOTAssetGroup.m in Sources */,
+				182E863221C2334C0088C18B /* RDLOTShapeCircle.m in Sources */,
+				182E868D21C2334C0088C18B /* RDLOTStrokeRenderer.m in Sources */,
+				182E862F21C2334C0088C18B /* RDLOTMask.m in Sources */,
+				182E868521C2334C0088C18B /* RDLOTFillRenderer.m in Sources */,
+				182E866B21C2334C0088C18B /* RDLOTPolystarAnimator.m in Sources */,
+				182E865121C2334C0088C18B /* RDLOTKeypath.m in Sources */,
+				182E866D21C2334C0088C18B /* RDLOTRoundedRectAnimator.m in Sources */,
+				1833B16B2351AAD7003957C3 /* RDLOTEffectTintRender.m in Sources */,
+				182E863621C2334C0088C18B /* RDLOTShapeGradientFill.m in Sources */,
+				182E864921C2334C0088C18B /* RDLOTAnimationCache.m in Sources */,
+				1848CDC12359B97D0051F2E4 /* BCMeshTransformView.m in Sources */,
+				182E864F21C2334C0088C18B /* RDLOTComposition.m in Sources */,
+				1848CDB72359B97D0051F2E4 /* BCMeshContentView.m in Sources */,
+				182E861721C2334C0088C18B /* RDLOTBezierPath.m in Sources */,
+				182E866F21C2334C0088C18B /* RDLOTArrayInterpolator.m in Sources */,
+				18657D8F23951B1800A3D3EB /* RDLOTEffectDistortionRender.m in Sources */,
+				182E865221C2334C0088C18B /* RDLOTValueCallback.m in Sources */,
+				182E868B21C2334C0088C18B /* RDLOTRepeaterRenderer.m in Sources */,
+				1848CDBD2359B97D0051F2E4 /* BCMeshTransformAnimation.m in Sources */,
+				182E864721C2334C0088C18B /* RDLOTAnimatedControl.m in Sources */,
+				182E864421C2334C0088C18B /* RDLOTShapeTransform.m in Sources */,
+				182E867321C2334C0088C18B /* RDLOTNumberInterpolator.m in Sources */,
+				182E864B21C2334C0088C18B /* RDLOTAnimationView.m in Sources */,
+				1848CDBA2359B97D0051F2E4 /* BCMeshTexture.m in Sources */,
+				182E867521C2334C0088C18B /* RDLOTPathInterpolator.m in Sources */,
+				182E864821C2334C0088C18B /* RDLOTAnimatedSwitch.m in Sources */,
+				182E866721C2334C0088C18B /* RDLOTPathAnimator.m in Sources */,
+				182E864E21C2334C0088C18B /* RDLOTCacheProvider.m in Sources */,
+				182E868121C2334C0088C18B /* RDLOTAnimatorNode.m in Sources */,
+				182E864A21C2334C0088C18B /* RDLOTAnimationTransitionController.m in Sources */,
+				182E861321C2334C0088C18B /* RDLOTKeyframe.m in Sources */,
+				1848CDC32359B97D0051F2E4 /* BCMeshShader.m in Sources */,
+				182E867921C2334C0088C18B /* RDLOTSizeInterpolator.m in Sources */,
+				182E867B21C2334C0088C18B /* RDLOTTransformInterpolator.m in Sources */,
+				1833B1632351A9E2003957C3 /* RDLOTEffectTint.m in Sources */,
+				182E863A21C2334C0088C18B /* RDLOTShapePath.m in Sources */,
+				182E866921C2334C0088C18B /* RDLOTPolygonAnimator.m in Sources */,
+				18657D8B2394F2E900A3D3EB /* RDLOTTintCIFilter.m in Sources */,
+				183B76E3232A1D1000BE3E62 /* RDLOTEffectGroup.m in Sources */,
+				182E862D21C2334C0088C18B /* RDLOTLayerGroup.m in Sources */,
+				182E867F21C2334C0088C18B /* RDLOTTrimPathNode.m in Sources */,
+				182E861E21C2334C0088C18B /* CALayer+RDCompat.m in Sources */,
+				182E868921C2334C0088C18B /* RDLOTRenderGroup.m in Sources */,
+				182E861A21C2334C0088C18B /* RDLOTRadialGradientLayer.m in Sources */,
+				184DBE4A2341B95500C402E5 /* RDLOTRenderEffectNode.m in Sources */,
+				182E863E21C2334C0088C18B /* RDLOTShapeRepeater.m in Sources */,
+				1848CDC02359B97D0051F2E4 /* BCMeshTransform+Interpolation.m in Sources */,
+				182E867721C2334C0088C18B /* RDLOTPointInterpolator.m in Sources */,
+				182E862521C2334C0088C18B /* UIColor.m in Sources */,
+				182E861121C2334C0088C18B /* RDLOTBezierData.m in Sources */,
+				182E862B21C2334C0088C18B /* RDLOTLayer.m in Sources */,
+				182E860B21C2334C0088C18B /* RDLOTCompositionContainer.m in Sources */,
+				182E866521C2334C0088C18B /* RDLOTCircleAnimator.m in Sources */,
+				1848CDBC2359B97D0051F2E4 /* BCMutableMeshTransform+Convenience.m in Sources */,
+				1848CDB62359B97D0051F2E4 /* BCMeshBuffer.m in Sources */,
+				182E864621C2334C0088C18B /* RDLOTShapeTrimPath.m in Sources */,
+				182E861521C2334C0088C18B /* CGGeometry+RDLOTAdditions.m in Sources */,
+				182E868321C2334C0088C18B /* RDLOTRenderNode.m in Sources */,
+				182E864021C2334C0088C18B /* RDLOTShapeStar.m in Sources */,
+				182E862021C2334C0088C18B /* NSValue+RDCompat.m in Sources */,
+				182E867121C2334C0088C18B /* RDLOTColorInterpolator.m in Sources */,
+				1848CDB82359B97D0051F2E4 /* BCMeshTransform.mm in Sources */,
+				1833B1622351A9E2003957C3 /* RDLOTEffectBlur.m in Sources */,
+				182E860D21C2334C0088C18B /* RDLOTLayerContainer.m in Sources */,
+				182E864221C2334C0088C18B /* RDLOTShapeStroke.m in Sources */,
+				182E868721C2334C0088C18B /* RDLOTGradientFillRender.m in Sources */,
+				182E864D21C2334C0088C18B /* RDLOTBlockCallback.m in Sources */,
+				182E862721C2334C0088C18B /* RDLOTAsset.m in Sources */,
+				182E860F21C2334C0088C18B /* RDLOTMaskContainer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		182017F520C69C7C0045B2CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		182017F620C69C7C0045B2CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		182017F820C69C7C0045B2CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					armv7,
+					armv7s,
+				);
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K8UMEY246Y;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/RDLottie-PrefixHeader.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		182017F920C69C7C0045B2CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					armv7,
+					armv7s,
+				);
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K8UMEY246Y;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/RDLottie-PrefixHeader.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		182017E920C69C7C0045B2CE /* Build configuration list for PBXProject "RDLottie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182017F520C69C7C0045B2CE /* Debug */,
+				182017F620C69C7C0045B2CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		182017F720C69C7C0045B2CE /* Build configuration list for PBXNativeTarget "RDLottie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182017F820C69C7C0045B2CE /* Debug */,
+				182017F920C69C7C0045B2CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 182017E620C69C7C0045B2CE /* Project object */;
+}
